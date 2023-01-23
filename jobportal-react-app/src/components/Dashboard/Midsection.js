@@ -3,7 +3,6 @@ import React from "react"
 
 export default function Midsection() {
     return (
-    
         <div className="midsection_1">
            <div className="snapshot_outside_boundary">
             <h5 className="snapshot">Snapshots</h5>

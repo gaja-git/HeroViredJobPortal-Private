@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "./Header"
+import Header from "./Header/Header"
 import Midsection from "./Midsection"
-import Searchbox from "./Searchbox"
+import Searchbox from "./Searchbox/Searchbox"
 import "./jobcanvas.css"
 import Content from "./Content"
 export default function Jobcanvas() {
