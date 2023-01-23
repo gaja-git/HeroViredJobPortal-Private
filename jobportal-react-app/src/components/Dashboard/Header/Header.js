@@ -6,7 +6,7 @@ export default function Header() {
                 <div className="fullheader_v">
                         <div className="h_section1">
                                 <div className="logo">
-                                        <img src="/images/HV.png" alt="HV_logo" height='45px' width='200px' />
+                                        <img src="/images/HV.png" alt="HV_logo" height='40px' width='200px' />
                                 </div>
                         </div>
                         <div className="h_section2">

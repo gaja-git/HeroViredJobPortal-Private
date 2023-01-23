@@ -26,9 +26,10 @@ const Login = () => {
             <h1> Welcome to Job Portal Page GAVI!!!</h1>
             <h2> Please enter login details here:</h2>
 
-
-            <input type="text" placeholder='email' name='email'  onChange={handleLogin}/>
-            <input type="text" placeholder='password' name='password' onChange={handleLogin}/>
+            <label> E-mail ID: </label><br></br>
+            <input type="text" placeholder='email' name='email'  onChange={handleLogin}/><br></br>
+            <label> Password: </label><br></br>
+            <input type="text" placeholder='password' name='password' onChange={handleLogin}/><br></br>
             <input type="submit" onClick={sendLogin} />
             {/* <Link to="/profile">
             <button>Please create your profile</button>
