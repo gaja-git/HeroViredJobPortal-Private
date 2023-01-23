@@ -1,0 +1,188 @@
+.midsection_1{
+width: 1538px;
+height: 414px;
+left: 94px;
+top: 114px;
+
+background: #EFF6FF;
+}
+
+.snapshot_outside_boundary{
+    /* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 957.5px;
+height: 151px;
+left: 141px;
+top: 146px;
+}
+
+.snapshot{
+width: 102px;
+height: 36px;
+
+/* Roboto 24 Medium 500 */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 150%;
+/* identical to box height, or 36px */
+
+
+/* Light/Primary text */
+color: #333333;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.snapshot_inner_item_boundary{
+    /* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 28px;
+
+width: 957.5px;
+height: 105px;
+
+filter: drop-shadow(0px 4px 4px rgba(184, 184, 184, 0.25));
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.all_job_section{
+    
+width: 300.5px;
+height: 105px;
+
+background: #FFFFFF;
+border-radius: 7.5px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.all_job_inner_frame{
+    position: absolute;
+width: 252.5px;
+height: 69px;
+left: 24px;
+top: 18px;
+}
+
+.all_job_icon_frame{
+    position: absolute;
+width: 69px;
+height: 69px;
+left: 0px;
+top: 0px;
+}
+.all_job_icon_ecllipse{
+position: absolute;
+width: 69px;
+height: 69px;
+left: 0px;
+top: 0px;
+background: #D4E5FF;
+}
+
+
+
+.all_job_icon_vector{
+    position: absolute;
+left: 8.02%;
+right: 79.33%;
+top: 70.24%;
+bottom: -16.56%;
+
+background: #006FCB;
+transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.all_jobs_right_arrow{
+    position: absolute;
+width: 28.5px;
+height: 28.5px;
+left: 224px;
+top: 20.25px;
+}
+
+._all_job_text_display{
+    /* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 73px;
+height: 77px;
+left: 76.5px;
+top: -4px;
+
+}
+.all_job_text1{
+    width: 73px;
+height: 30px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20.0975px;
+line-height: 150%;
+/* or 30px */
+
+
+color: #2D2D2D;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: -9px 0px;
+}
+
+.all_job_text2{
+    width: 60px;
+height: 56px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 37.5px;
+line-height: 150%;
+/* or 56px */
+
+
+color: #006FCB;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
