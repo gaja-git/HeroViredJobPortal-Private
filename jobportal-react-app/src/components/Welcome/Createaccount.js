@@ -17,21 +17,31 @@ export default function CreateAccount() {
     console.log(data);
   };
   const sendData = async () => {
-    let res = await axios.post("/user", data);
-    console.log(res.data);
+    // let res = await axios.post("/user", data);
+    // console.log(res.data);
     navigate("/jobcanvas");
   };
 
   return (
     <div className="createac_page" >
       <div className="header" >
-        <h3 >GAVI JobPortal</h3>
+        <h1 >Hero Vired JobPortal</h1>
       </div>
-      <div className="createac_container">
-        <input type="text" placeholder="useremail" name="email" onChange={handleChange} /> <br></br>
-        <input type="password" placeholder="password" name="password" onChange={handleChange} />
-        <input type="submit" placeholder="Create Account" onClick={sendData} />
-
+      <div className="createac_content">
+        <img src="/images/resume.jpg" alt="jobimage" />
+        <div className="createac_form">
+          <h2>Create Account</h2>
+          <h5>Please enter your email and password to register to our job portal</h5>
+          <form >
+            <br></br>
+            <br></br>
+            <label className="labelcss" for="email" >Email     :</label>
+            <input className="inputcss" type="text" id="email" placeholder="useremail" name="email" onChange={handleChange} /> <br></br>
+            <label className="labelcss" for="pswd" >Password:</label>
+            <input className="inputcss" type="password" id="pswd" placeholder="password" name="password" onChange={handleChange} /><br></br>
+            <input type="submit" placeholder="Create Account" onClick={sendData} />
+          </form>
+        </div>
       </div>
     </div>
 
