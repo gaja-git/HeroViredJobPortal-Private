@@ -19,7 +19,7 @@ export default function CreateAccount() {
   const sendData = async () => {
     // let res = await axios.post("/user", data);
     // console.log(res.data);
-    navigate("/jobcanvas");
+    navigate("/profile");
   };
 
   return (
