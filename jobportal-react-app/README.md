@@ -18,9 +18,10 @@ This command will install axios required for fetching API data from backend.
   * Profile page - Vidhya
   * Middle Section and Content in Jobcanvas - Gaja
   * Jobcanvas layout, Header and Searchbox - Vidhya
-
-
-
+  * All jobs & Eligible jobs - Gaja
+  * Applied jobs - Vidhya
+  * Shortlisted & Rejected - Gaja
+  * Interviewing & Offer received - Vidhya
 
 
 # Getting Started with Create React App
