@@ -60,7 +60,9 @@ export default function Midsection() {
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
-                                    Applied Jobs
+                                    <Link to="/appliedjobs">
+                                        Applied jobs
+                                    </Link>
                                 </div >
                                 <div className="all_job_text2_gj">
                                     50
@@ -83,7 +85,9 @@ export default function Midsection() {
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
-                                    Shortlisted
+                                    <Link to="/shortlisted">
+                                        Shortlisted
+                                    </Link>
                                 </div >
                                 <div className="all_job_text2_gj">
                                     100
@@ -98,7 +102,9 @@ export default function Midsection() {
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
-                                    Interviewing
+                                    <Link to="/rejected">
+                                        Rejected
+                                    </Link>
                                 </div >
                                 <div className="all_job_text2_gj">
                                     100
@@ -113,7 +119,9 @@ export default function Midsection() {
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
-                                    Rejected
+                                    <Link to="/interviewing">
+                                        Interviewing
+                                    </Link>
                                 </div >
                                 <div className="all_job_text2_gj">
                                     35
@@ -128,7 +136,9 @@ export default function Midsection() {
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
-                                    Offer Recieved
+                                    <Link to="/offerrecieved">
+                                        Offer Recieved
+                                    </Link>
                                 </div >
                                 <div className="all_job_text2_gj">
                                     30

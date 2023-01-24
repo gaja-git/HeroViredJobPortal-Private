@@ -20,6 +20,7 @@ export default function Alljobs() {
                             <span><i class="fa fa-map-marker"></i> Mumbai,Maharastra</span></div>
                         <div className="job_type_gj"> part time</div>
                         <div className="job_cost_gj">36$</div>
+                        <div className="job_comp_gj">CEIPAL</div>
                     </div>
                     <div className="job_details_gj">
                         <p> This job is on full stack development sfdsdfs sfkjirein nvioerjifj sdfsjff

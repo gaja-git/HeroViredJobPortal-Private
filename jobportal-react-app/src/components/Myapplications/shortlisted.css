@@ -1,0 +1,39 @@
+.shortlisted{
+    /* width: 100%;
+    height:100%; */
+    background: #EFF6FF;
+    font-family: 'Roboto';
+    font-style: normal;
+    /* background-color: #FFB800; */
+}
+
+table {
+/* border:  1px solid #B6B6B6; */
+background:  #FFFFFF;
+margin-left: 40px;
+border: none;
+
+ 
+}
+tr > * {
+  /* border: 1px solid; */
+  border: none;
+  /* border-bottom: grey ; */
+
+}
+
+.job_code_gj{
+    color: #006FCB;
+}
+
+.job_status_gj{
+    color: #FFB800;
+}
+
+span {
+  /* display: block;
+  contain: inline-size; /* the content won't affect the size 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; */
+}
