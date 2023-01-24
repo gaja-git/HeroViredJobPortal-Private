@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import './midsection.css'
 
 export default function Midsection() {
@@ -16,15 +17,18 @@ export default function Midsection() {
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
-                                    All Jobs
+                                    <Link to="/alljobs">
+                                        All Jobs
+                                    </Link>
                                 </div >
                                 <div className="all_job_text2_gj">
                                     100
                                 </div>
+                                {/* <div className="all_jobs_right_arrow">
+                                <button></button>
+                                </div> */}
                             </div>
-                            {/* <div className="all_jobs_right_arrow">
 
-                            </div> */}
 
                         </div>
                     </div>
@@ -35,7 +39,10 @@ export default function Midsection() {
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
-                                    Eligible Jobs
+
+                                    <Link to="/eligiblejobs">
+                                        Eligiblejobs
+                                    </Link>
                                 </div >
                                 <div className="all_job_text2_gj">
                                     100

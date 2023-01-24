@@ -39,7 +39,7 @@ export default function CreateAccount() {
             <input className="inputcss" type="text" id="email" placeholder="useremail" name="email" onChange={handleChange} /> <br></br>
             <label className="labelcss" for="pswd" >Password:</label>
             <input className="inputcss" type="password" id="pswd" placeholder="password" name="password" onChange={handleChange} /><br></br>
-            <input type="submit" placeholder="Create Account" onClick={sendData} />
+            <button onClick={sendData}>Submit</button>
           </form>
         </div>
       </div>

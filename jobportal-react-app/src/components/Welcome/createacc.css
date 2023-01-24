@@ -63,3 +63,8 @@ text-align: center;
   padding: 10px;
   font-weight: bold;
 }
+
+button{
+    margin-top: 10px;
+    margin-left: 50%;
+}
