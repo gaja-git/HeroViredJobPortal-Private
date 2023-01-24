@@ -136,8 +136,8 @@ export default function Midsection() {
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
-                                    <Link to="/offerrecieved">
-                                        Offer Recieved
+                                    <Link to="/offerreceived">
+                                        Offer Received
                                     </Link>
                                 </div >
                                 <div className="all_job_text2_gj">

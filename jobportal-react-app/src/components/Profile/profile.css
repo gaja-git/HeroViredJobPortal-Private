@@ -10,13 +10,13 @@
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM7xM-CNgAlFCxd_lmsjKtZUyj5KsbBfhBrA&usqp=CAU");
     background-repeat: none;
     background-size: cover;
-    /* background-position: center; */
-
 
 }
 .profile_v>h1{
     margin: 0;
-    padding:0;
+    padding:10px;
+    margin-left:45px;
+    color:#006FCB;
     text-align: center;
 }
 .profile_v>form{
@@ -25,14 +25,14 @@
     /* height: 50%; */
     margin-left: 50%;
     border-radius: 15px;
-    margin-top: 8%;
+    margin-top: 0%;
     justify-content: center;
     align-items: center;
 }
 .profile_v>form>label{
     /* height:20px; */
    width :200px;
-   padding: 10px;
+   padding: 0px;
    /* margin-bottom: 6px; */
    /* margin-top:3px; */
    font-family: 'Times New Roman', Times, serif;
@@ -44,8 +44,8 @@
 .profile_v>form>input{
     border-radius: 4px;   
     /* height:30px;  */
-    width :200px;
-    padding: 10px;
+    width :250px;
+    padding: 6px;
     font-weight: bold;
     margin-bottom: 6px;
 }
@@ -53,7 +53,7 @@
     background-color:palegreen;
     cursor: pointer;
     margin-left: 92px;
-    font-size: large;
+    font-size:larger;
 
 }
 .profile_v>form>.profile_submit:hover{

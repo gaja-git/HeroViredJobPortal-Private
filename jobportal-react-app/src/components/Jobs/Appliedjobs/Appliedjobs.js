@@ -1,12 +1,14 @@
 import Header from "../../Dashboard/Header/Header"
+import Searchbox from "../../Dashboard/Searchbox/Searchbox"
 
 
-export default function Alljobs() {
+export default function Appliedjobs() {
     return (
         <div className="alljobs">
             <Header />
             <div className="Searchbox">
-                <p>Searchbox section</p>
+                <h4>Applied Jobs</h4>
+                <Searchbox></Searchbox>
             </div>
             <div className="contents">
                 <div className="job_content_gj">
