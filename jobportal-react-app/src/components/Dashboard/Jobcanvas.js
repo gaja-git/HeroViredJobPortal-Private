@@ -14,6 +14,7 @@ export default function Jobcanvas() {
 				<Midsection />
 			</div>
 			<div className="searchbox">
+			    <h4>All Jobs</h4>
 				<Searchbox />
 			</div>
 			<div className="content">
