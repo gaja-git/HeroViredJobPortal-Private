@@ -6,7 +6,7 @@ export default function Content() {
                 <div className="job_content_container_gj">
                         <div className="job_content_gj">
                                 <div className="job_title_gj">
-                                        <p>JPC-169 Developer</p>
+                                        <h3>JPC-169 Developer</h3>
                                         <button>Apply</button>
                                 </div>
                                 <div className="job_params_gj">
