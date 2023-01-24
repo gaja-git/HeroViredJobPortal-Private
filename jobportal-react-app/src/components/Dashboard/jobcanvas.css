@@ -18,7 +18,9 @@
 .sub_header{
     height:35%;
     width:100%;
-    background-color:white;
+    /* background-color:white; */
+    
+background: #EFF6FF;
   
 }
 .searchbox{
