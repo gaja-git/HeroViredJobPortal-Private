@@ -41,15 +41,15 @@ const Login = () => {
                         <label for="email"> E-mail ID: </label>
                         <input type="text" id="email" placeholder='email' name='email' onChange={handleLogin} /><br></br>
                         <label for="pass"> Password: </label>
-                        <input type="text" id="p" placeholder='password' name='password' onChange={handleLogin} /><br></br>
-                        <input type="submit" onClick={sendLogin} />
+                        <input type="text" id="pass" placeholder='password' name='password' onChange={handleLogin} /><br></br>
+                        <input type="submit" className ="login_submit" onClick={sendLogin} />
                     </form>
             
             
-                    <span> Are you a candidate searching for job? </span><br></br>
-                    <span> Please create your account </span><br></br>
+                    <span className ="login_span"> Are you a new job seeker? </span><br></br>
+                    {/* <span> Please create your account </span><br></br> */}
                     {/* <input type="submit" Create Account onClick={create_v}  /> */}
-                    <button onClick={create_v}>Create Account </button>
+                    <button onClick={create_v}>Please Create Account </button>
 
                     {/* <Link to="/createaccount">
                     <button>Create account!</button>
