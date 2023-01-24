@@ -1,0 +1,79 @@
+.job_content_container_gj{
+    width:100%;
+    height:100%;
+    /* display: flex; */
+    align-items: center;
+    padding-left: 35px;
+    border: solid black;
+   justify-content: center;
+   
+
+}
+.job_content_gj{
+    width:80%;
+    height: 35%;
+    /* display: flex; */
+    /* background-color: green; */
+    background: white;
+    
+    border-radius: 10px;
+}
+
+.job_title_gj{
+    width:80%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: blue; */
+    /* padding-left: 20px; */
+/* Roboto 24 Regular 400 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size:large;
+line-height: 0px;
+/* identical to box height, or 36px */
+
+
+color: #006FCB;
+/* background-color: red; */
+}
+.job_title_gj>button{
+    
+    margin-right: 0px;
+    background: #FFFFFF;
+    border: 1px solid #006FCB;
+   border-radius: 10px;
+   margin-right: -100px;
+   
+}
+
+.job_params_gj{
+    width:60%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    font-size:smaller;
+    /* font-family: 'Roboto';
+font-style: normal; */
+    /* font-weight: bold; */
+     justify-content:left ; 
+  
+}
+
+.job_location_gj{
+
+}
+
+.job_type_gj{
+
+}
+
+.job_cost_gj{
+
+}
+
+.job_details_gj{
+    width:80%;
+    height: 100%;
+}
