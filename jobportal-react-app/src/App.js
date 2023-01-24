@@ -6,6 +6,8 @@ import Login from './components/Welcome/Login';
 import Profile from './components/Profile/Profile';
 import Alljobs from './components/Jobs/Alljobs/Alljobs';
 import Eligiblejobs from './components/Jobs/Eligiblejobs/Eligiblejobs';
+import Shortlisted from './components/Myapplications/Shortlisted';
+import Rejected from './components/Myapplications/Rejected';
 
 
 function App() {
@@ -18,6 +20,12 @@ function App() {
         <Route element={<Jobcanvas />} path="/jobcanvas" />
         <Route element={<Alljobs />} path="/alljobs" />
         <Route element={<Eligiblejobs />} path="/eligiblejobs" />
+        {/* <Route element={<Appliedjobs />} path="/appliedjobs" /> */}
+        <Route element={<Shortlisted />} path="/shortlisted" />
+        <Route element={<Rejected />} path="/rejected" />
+        {/* <Route element={<Interviewing />} path="/interviewing" />
+        <Route element={<Offerrecieved />} path="/offerrecieved" /> */}
+
 
 
       </Routes>
