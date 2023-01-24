@@ -11,7 +11,7 @@
  /* width: 1728px;
 height: 76px;  */
 width:100%;
-height:20%; 
+height:15%; 
 left: 0px;
 top: 0px;
 align-items: center;
@@ -25,22 +25,21 @@ text-align: center;
     display:flex;
     flex-direction: row;
     align-content: center;
+    background: #EFF6FF;
 }
 
 .createac_form{
     
      height:50%;
     width:30%;
-    /* left:650px;
-    top: 650px; */
-    display: flex;
+     display: flex;
     flex-direction: column;
     align-content: center;
     /* background-color: burlywood; */
     justify-content: space-evenly;
     margin:10px;
-    padding: 10px;
-
+    padding: 10px; 
+    background: #EFF6FF;
 
 }
 .labelcss{
@@ -54,17 +53,29 @@ text-align: center;
     display: inline-block;
 }
 
+
 .inputcss{
-    /* color:blue; */
-    /* border: 2px solid ; */
-  border-radius: 4px;   
-  height:30px; 
-  width :200px;
-  padding: 10px;
-  font-weight: bold;
+    border-radius: 4px;   
+    /* height:30px;  */
+    width :200px;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 6px;
 }
 
 button{
     margin-top: 10px;
     margin-left: 50%;
+}
+
+.createacc_submit{
+    background-color:#006FCB;
+    color:white;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 45%;
+    height: 40px;
+    width:205px;
+    border-radius: 4px;
+
 }

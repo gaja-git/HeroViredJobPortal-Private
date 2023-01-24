@@ -10,6 +10,7 @@ flex-direction: column;
 /* background-color: purple; */
 margin-left: 10%;
 
+background: #EFF6FF;
 
 }
 
@@ -107,6 +108,7 @@ width:20%;
 
 background: #FFFFFF;
 border-radius: 7.5px;
+border:#FFFFFF ;
 }
 
 .all_job_inner_frame_gj{
