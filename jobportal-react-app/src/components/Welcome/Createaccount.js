@@ -31,7 +31,7 @@ export default function CreateAccount() {
         <img src="/images/resume.jpg" alt="jobimage" />
         <div className="createac_form">
           <h2>Create Account</h2>
-          <h5>Please enter your email and password to register to our job portal</h5>
+          <h4>Please enter your email and password to register to our job portal</h4>
           <form >
             <br></br>
             <br></br>
@@ -39,7 +39,8 @@ export default function CreateAccount() {
             <input className="inputcss" type="text" id="email" placeholder="useremail" name="email" onChange={handleChange} /> <br></br>
             <label className="labelcss" for="pswd" >Password:</label>
             <input className="inputcss" type="password" id="pswd" placeholder="password" name="password" onChange={handleChange} /><br></br>
-            <button onClick={sendData}>Submit</button>
+            {/* <button onClick={sendData}>Submit</button> */}
+            <input type="submit" className="createacc_submit" onClick={sendData} />
           </form>
         </div>
       </div>
