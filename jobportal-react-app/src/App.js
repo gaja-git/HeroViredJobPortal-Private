@@ -3,7 +3,7 @@ import { Routes, Route} from "react-router-dom";
 import Createaccount from './components/Welcome/Createaccount';
 import Jobcanvas from './components/Dashboard/Jobcanvas';
 import Login from './components/Welcome/Login';
-import Profile from './components/Profile';
+import Profile from './components/Profile/Profile';
 
 function App() {
   return (

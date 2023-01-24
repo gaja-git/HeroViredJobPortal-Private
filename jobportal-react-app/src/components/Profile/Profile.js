@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import {Link} from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import './profile.css'
 
 
 const Profile = () => {
@@ -22,7 +23,7 @@ const Profile = () => {
 
     }
     return (
-        <div>
+        <div className ="profile_v">
             <input type="number" placeholder='Phone-number' name='phone'  onChange={handleProfile}/>
             <input type="text" placeholder='Company' name='Company'  onChange={handleProfile}/>
             <input type="number" placeholder='CTC' name='CTC'  onChange={handleProfile}/>
