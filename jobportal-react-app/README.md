@@ -11,6 +11,18 @@ This command will install files required for routing purpose.
 
 * npm install axios 
 This command will install axios required for fetching API data from backend.
+
+# WORK SPLIT:
+  * Login Page - Vidhya
+  * Create account - Gaja
+  * Profile page - Vidhya
+  * Middle Section and Content in Jobcanvas - Gaja
+  * Jobcanvas layout, Header and Searchbox - Vidhya
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

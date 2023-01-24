@@ -1,12 +1,12 @@
 import React from "react"
 import Header from "./Header/Header"
-import Midsection from "./Midsection"
+import Midsection from "./Midsection/Midsection"
 import Searchbox from "./Searchbox/Searchbox"
 import "./jobcanvas.css"
-import Content from "./Content"
+import Content from "./Content/Content"
 export default function Jobcanvas() {
 	return (
-		<div className ="whole">
+		<div className="whole">
 			<div className="heading">
 				<Header />
 			</div>
@@ -16,7 +16,7 @@ export default function Jobcanvas() {
 			<div className="searchbox">
 				<Searchbox />
 			</div>
-			<div className="content"> 
+			<div className="content">
 				<Content />
 			</div>
 		</div>
