@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   resources :candidateapplications
   
   resources :useraccount
+  resources :login
+  resources :logout
+  resources :profile
 end

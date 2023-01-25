@@ -42,6 +42,26 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_25_100451) do
     t.string "jobtitle"
   end
 
+  create_table "profiles", force: :cascade do |t|
+    t.string "firstname"
+    t.string "lastname"
+    t.string "email"
+    t.string "contact"
+    t.string "address"
+    t.string "about"
+    t.string "profilepic"
+    t.string "currentcompany"
+    t.bigint "ctc"
+    t.bigint "experience"
+    t.string "currentrole"
+    t.string "skills"
+    t.string "resumelink"
+    t.bigint "expectedsalary"
+    t.string "preferredlocation"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "skills", force: :cascade do |t|
     t.string "skillName"
     t.datetime "created_at", null: false

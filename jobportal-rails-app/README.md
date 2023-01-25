@@ -12,28 +12,35 @@ Execute - bundle install
 This will resolve the dependency error while executing in different systems
 
 ## Create Jobportal application:
-* Go to config/routes.rb and set the path in root for index API from Application Controller.
+ 	 * Go to config/routes.rb and set the path in root for index API from Application Controller.
 		root "application#index"
 		
-* Creating controllers
+	* Creating controllers
 		* rails generate controller name
-* For the user created controllers add the route as resources in routes.rb
+	* For the user created controllers add the route as resources in routes.rb
 		* resources :controllername
-* Creating model
+	* Creating model
 		 * rails generate model Name
 	 This will generate model.rb as well db migration file automatically.
-* Creating only db files
+	* Creating only db files
 		* rails generate migration create_tablename
-* Db migration is performed to create tables
+	* Db migration is performed to create tables
 		 * rails db:migrate
-* CRUD operations can be performed inside the respective controllers.
+	* CRUD operations can be performed inside the respective controllers.
 
 ## The following tables are migrated into database jobportalg2
  * useraccount - Vidhya
  * skills - Gaja
  * jobdetails - Gaja
- * cprofile - Vidhya 
- * candidateapplication - Gaja
+ * profile - Vidhya 
+ * candidateapplication - Gaja 
+ 
+ ## The following controllers are created 
+ * usseraccount - Vidhya
+ * jobdetails - Gaja
+ * login and logut - Vidhya
+ * candidateapplications - Gaja
+ * profile - Vidhya
  
 ## To resolve CORS Policy error:  
 * gem "rack-cors"
@@ -43,8 +50,8 @@ Create cors.rb in
 * config/initializers/cors.rb
 
 Copy below code inside cors.rb
-	Rails.application.config.middleware.insert_before 0, Rack::Cors do
-    	allow do
+	1.Rails.application.config.middleware.insert_before 0, Rack::Cors do
+    		allow do
    	   origins 'http://localhost:3000'
     	  resource '*', headers: :any, methods: [:get, :post, :update, :delete, :put]
    	 end
