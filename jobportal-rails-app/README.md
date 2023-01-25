@@ -12,15 +12,17 @@ Execute - bundle install
 This will resolve the dependency error while executing in different systems
 
 Create Jobportal application landing routes:
+
 	1. Go to config/routes.rb
 		root "application#index"
+		
 	2. Go to app/controllers/application_controller.rb
 		Add a function as below
 			def index
 				 render html: "JobPortal-Rails Application"
 			end
 
-  3.rails generate migration create_skills
+3.rails generate migration create_skills
   	after adding necessary fields to migration file, run below command
     rails db:migrate
   4.rails generate migration create_jobdetails
