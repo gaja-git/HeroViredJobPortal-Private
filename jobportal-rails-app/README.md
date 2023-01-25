@@ -11,31 +11,60 @@ To resolve the "missing gemfiles error "
 Execute - bundle install 
 This will resolve the dependency error while executing in different systems
 
-Create Jobportal application landing routes:
-
-	1. Go to config/routes.rb
+## Create Jobportal application:
+* Go to config/routes.rb and set the path in root for index API from Application Controller.
 		root "application#index"
 		
-	2. Go to app/controllers/application_controller.rb
-		Add a function as below
-			def index
-				 render html: "JobPortal-Rails Application"
-			end
+* Creating controllers
+		* rails generate controller name
+* For the user created controllers add the route as resources in routes.rb
+		* resources :controllername
+* Creating model
+		 * rails generate model Name
+	 This will generate model.rb as well db migration file automatically.
+* Creating only db files
+		* rails generate migration create_tablename
+* Db migration is performed to create tables
+		 * rails db:migrate
+* CRUD operations can be performed inside the respective controllers.
 
-3.rails generate migration create_skills
+## The following tables are migrated into database jobportalg2
+ * useraccount - Vidhya
+ * skills - Gaja
+ * jobdetails - Gaja
+ * cprofile - Vidhya 
+ * candidateapplication - Gaja
+ 
+## To resolve CORS Policy error:  
+* gem "rack-cors"
+bundle install
 
-  	after adding necessary fields to migration file, run below command
-	
-    rails db:migrate
-    
-4.rails generate migration create_jobdetails
+Create cors.rb in
+* config/initializers/cors.rb
 
-    	after adding necessary fields to migration file , run below command
-	
-    ran rails db:migrate
+Copy below code inside cors.rb
+	Rails.application.config.middleware.insert_before 0, Rack::Cors do
+    	allow do
+   	   origins 'http://localhost:3000'
+    	  resource '*', headers: :any, methods: [:get, :post, :update, :delete, :put]
+   	 end
+ 	 end
+
+## For authentication we need bcrypt
+* Uncomment line 37 in gem file
+* bundle install
+* require 'bcrypt' -> used to import bcrypt in required files
+
+## To connect to postgresql
+* psql -U postgresql in command prompt
+* Enter password:
+* create database name;
+* \c name -> will connect to our new database
+* \dt -> to view tables after migration
+* select * from tablename; -> display table with column names and values.
+
 
 # README
-
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
