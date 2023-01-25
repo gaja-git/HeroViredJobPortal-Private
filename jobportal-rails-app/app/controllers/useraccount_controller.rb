@@ -5,23 +5,26 @@ class UseraccountController < ApplicationController
         current_user = Useraccount.find_by_id(session[:current_user_id])
         render json: current_user
     end 
+
     def create
-        v = !params[:email].empty? and !params[:password].empty?
+        v = !params[:email].nil? and !params[:password].nil?
 
         if (v)
-          p=Useraccount.create(
-            'email': params[:email],
-            'password': params[:password],
-            'usertype': params[:usertype]
-            )
-          puts p
-          render json: "Data Added"
+          p=Useraccount.create('email': params[:email], 'password': params[:password], 'usertype': params[:usertype] )
+          puts "resultcreateacc=#{p}"
+          render json: "User Added"
         else
-        render json: "Data not added"
+        render json: "User not added"
         end
     end
     def show 
         v = Useraccount.find(params[:id])
         render json: v
+    end
+
+    def destroy
+        p = Useraccount.find(params[:id])
+        p.destroy
+        render json: "User deleted"
     end
 end

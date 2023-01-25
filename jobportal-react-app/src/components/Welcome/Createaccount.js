@@ -6,27 +6,45 @@ import axios from "axios";
 
 export default function CreateAccount() {
 
-  let [data, setData] = useState({});
+  let [createAccData, setCreateAccData] = useState({});
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    setData({
-      ...data,
+    setCreateAccData({
+      ...createAccData,
       [e.target.name]: e.target.value,
+      // "usertype": "student"
     });
-    console.log(data);
+    console.log(createAccData);
   };
+  // const getExistingUserData = () => {
+  //   let res = await axios.post("http://127.0.01:3001/useraccount", createAccData);
+  //   console.log(res.data);
+  // }
   const sendData = async () => {
-    // let res = await axios.post("/user", data);
-    // console.log(res.data);
-    navigate("/profile");
+    console.log("test user creation", createAccData)
+    console.log("before axios")
+    try {
+      let res = await axios.post("/useraccount", createAccData);
+      console.log("res", res)
+      console.log("user creation after")
+      console.log("Navigate to login");
+
+      // alert("User account is created successfully ! Please login now.")
+      navigate("/");
+
+    } catch (error) {
+      console.log(error);
+    }
+
+
   };
 
   return (
     <div className="createac_page" >
       <div className="header" >
         <div>
-          <img src="/images/HV Logo.png" alt="HV_logo" height='40px' width='200px' />
+          <img src="/images/HV.png" alt="HV_logo" height='40px' width='200px' />
         </div>
         <div className="header_content">
           <h5>Hero Vired Job Portal</h5>
@@ -41,6 +59,7 @@ export default function CreateAccount() {
           <h2>Create your Account</h2>
           <h4>Please enter your email and password to register to our job portal:</h4>
           <form >
+
             <label className="labelcss" for="email" >Email     :</label>
             <input className="inputcss" type="text" id="email" placeholder="useremail" name="email" onChange={handleChange} /> <br></br>
             <label className="labelcss" for="pswd" >Password:</label>

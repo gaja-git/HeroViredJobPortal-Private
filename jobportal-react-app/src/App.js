@@ -28,9 +28,6 @@ function App() {
         <Route element={<Rejected />} path="/rejected" />
         <Route element={<Interviewing />} path="/interviewing" />
         <Route element={<Offerreceived />} path="/offerreceived" />
-
-
-
       </Routes>
 
     </>
