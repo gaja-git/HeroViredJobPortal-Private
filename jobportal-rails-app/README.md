@@ -21,19 +21,10 @@ Create Jobportal application landing routes:
 			end
 
   3.rails generate migration create_skills
-    added: t.string :skillName
-    ran rails db:migrate
-  4.3.rails generate migration create_jobdetails
-    t.string :jobDescription
-    t.string :companyName      
-    t.string :location
-    t.string :jobType
-    t.bigint :salary      
-    t.date :postedDate
-    t.string :domain
-    t.string :jobCode      
-    t.string :skillsRequired
-    t.string :applicationStatus
+  	after adding necessary fields to migration file, run below command
+    rails db:migrate
+  4.rails generate migration create_jobdetails
+    	after adding necessary fields to migration file , run below command
     ran rails db:migrate
 
 # README
