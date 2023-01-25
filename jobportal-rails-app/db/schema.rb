@@ -10,9 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_25_064239) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_25_135609) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "candidateapplications", force: :cascade do |t|
+    t.integer "jobid"
+    t.integer "userid"
+    t.string "jobcode"
+    t.date "applieddate"
+    t.string "candidateapplicationstatus"
+    t.string "location"
+    t.date "posteddate"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "jobdetails", force: :cascade do |t|
     t.string "jobdescription"
@@ -25,6 +37,27 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_25_064239) do
     t.string "jobcode"
     t.string "skillsrequired"
     t.string "applicationstatus"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "jobtitle"
+  end
+
+  create_table "profiles", force: :cascade do |t|
+    t.string "firstname"
+    t.string "lastname"
+    t.string "email"
+    t.string "contact"
+    t.string "address"
+    t.string "about"
+    t.string "profilepic"
+    t.string "currentcompany"
+    t.bigint "ctc"
+    t.bigint "experience"
+    t.string "currentrole"
+    t.string "skills"
+    t.string "resumelink"
+    t.bigint "expectedsalary"
+    t.string "preferredlocation"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

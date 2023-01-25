@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "application#index"
   resources :useraccount
+  resources :login
+  resources :logout
+  resources :profile
 end
