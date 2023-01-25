@@ -41,7 +41,7 @@ export default function Midsection() {
                                 <div className="all_job_text1_gj">
 
                                     <Link to="/eligiblejobs">
-                                        Eligiblejobs
+                                        Eligible Jobs
                                     </Link>
                                 </div >
                                 <div className="all_job_text2_gj">

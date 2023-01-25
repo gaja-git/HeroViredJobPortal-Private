@@ -7,16 +7,21 @@
     width:100%;
 }
 .header{
-    /* position: absolute; */
- /* width: 1728px;
-height: 76px;  */
-width:100%;
-height:15%; 
+ width:100%;
+height:7%; 
 left: 0px;
 top: 0px;
-align-items: center;
+
 background: #006FCB;
-text-align: center;
+display: flex;
+flex-direction: row;
+align-content: center;
+}
+
+.header>.header_content{
+    align-self: center;
+    margin-left: 400px;
+    font-size: 30px;
 }
 
 .createac_content{
@@ -26,6 +31,8 @@ text-align: center;
     flex-direction: row;
     align-content: center;
     background: #EFF6FF;
+   
+  
 }
 
 .createac_form{
@@ -40,17 +47,28 @@ text-align: center;
     margin:10px;
     padding: 10px; 
     background: #EFF6FF;
+    margin-left: 600px;
+    margin-top: 30px;
 
+}
+.createac_form>form{
+    height:600px; 
+    width :400px;
+    margin-left: -10px;
+    background: lightskyblue;
+    align-items: center;
+    justify-content: center;
 }
 .labelcss{
     height:10px; 
-    width :200px;
+    width :100px;
     padding: 10px;
     text-align: right;
     /* border: 2px solid grey;
     border-radius: 4px;   */
     color:blue;
     display: inline-block;
+    margin-left: 0px;
 }
 
 
@@ -73,7 +91,7 @@ button{
     color:white;
     cursor: pointer;
     margin-top: 10px;
-    margin-left: 45%;
+    margin-left: 25%;
     height: 40px;
     width:205px;
     border-radius: 4px;
