@@ -83,9 +83,10 @@ flex-direction: row;
 
 width: 100%;
 height:80%;
-justify-content:space-evenly;
+/* justify-content:space-evenly; */
 margin-top: 0px;
 background: #EFF6FF;
+margin-left: 10px;
 
 /* background-color: green; */
 }
@@ -96,8 +97,11 @@ display: flex;
 flex-direction: row;
 width: 100%;
 height:80%;
-justify-content:space-evenly;
-
+margin-top: 0px;
+background: #EFF6FF;
+margin-left: 10px;
+/* justify-content:space-evenly; */
+/* background-color: aqua; */
 
 }
 
@@ -109,6 +113,7 @@ width:20%;
 background: #FFFFFF;
 border-radius: 7.5px;
 border:#FFFFFF ;
+margin-left: 15px;
 }
 
 .all_job_inner_frame_gj{
