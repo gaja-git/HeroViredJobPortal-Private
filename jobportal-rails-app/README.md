@@ -23,10 +23,15 @@ Create Jobportal application landing routes:
 			end
 
 3.rails generate migration create_skills
+
   	after adding necessary fields to migration file, run below command
+	
     rails db:migrate
-  4.rails generate migration create_jobdetails
+    
+4.rails generate migration create_jobdetails
+
     	after adding necessary fields to migration file , run below command
+	
     ran rails db:migrate
 
 # README
