@@ -1,0 +1,4 @@
+class jobdetails < ApplicationRecord 
+
+   
+end
