@@ -11,7 +11,33 @@ To resolve the "missing gemfiles error "
 Execute - bundle install 
 This will resolve the dependency error while executing in different systems
 
+Create Jobportal application landing routes:
+	1. Go to config/routes.rb
+		root "application#index"
+	2. Go to app/controllers/application_controller.rb
+		Add a function as below
+			def index
+				 render html: "JobPortal-Rails Application"
+			end
+
+  3.rails generate migration create_skills
+    added: t.string :skillName
+    ran rails db:migrate
+  4.3.rails generate migration create_jobdetails
+    t.string :jobDescription
+    t.string :companyName      
+    t.string :location
+    t.string :jobType
+    t.bigint :salary      
+    t.date :postedDate
+    t.string :domain
+    t.string :jobCode      
+    t.string :skillsRequired
+    t.string :applicationStatus
+    ran rails db:migrate
+
 # README
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

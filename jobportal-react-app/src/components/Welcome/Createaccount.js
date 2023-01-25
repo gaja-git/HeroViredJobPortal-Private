@@ -30,8 +30,8 @@ export default function CreateAccount() {
       <div className="createac_content">
         <img src="/images/resume.jpg" alt="jobimage" />
         <div className="createac_form">
-          <h2>Create Account</h2>
-          <h4>Please enter your email and password to register to our job portal</h4>
+          <h2>Create your Account</h2>
+          <h4>Please enter your email and password to register to our job portal:</h4>
           <form >
             <br></br>
             <br></br>
