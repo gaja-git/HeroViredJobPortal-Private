@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import './midsection.css'
+import axios from "axios"
 
 export default function Midsection() {
     let [midalljobData, setMidAllJobData] = useState([])

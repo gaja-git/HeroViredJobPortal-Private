@@ -28,7 +28,7 @@ align-content: center;
     width:100%;
     height: 80%;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     background: #EFF6FF;
    
@@ -37,27 +37,45 @@ align-content: center;
 
 .createac_form{
     
-     height:50%;
-    width:30%;
+     height:60%;
+     width:25%;
      display: flex;
     flex-direction: column;
     align-content: center;
     /* background-color: burlywood; */
     justify-content: space-evenly;
     margin:10px;
-    padding: 10px; 
+    /* padding: 10px;  */
     background: #EFF6FF;
     margin-left: 600px;
     margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
 
 }
+.createac_form>h2{
+    width:100%;
+    margin:0%;
+    height:10%;
+    text-align: center;
+    background-color: #006FCB;
+    color:white;
+    /* margin-top: -10px;
+    margin-left: -10px; */
+    /* padding:10px; */
+    /* top:0%; */
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
 .createac_form>form{
-    height:600px; 
+    height:500px; 
     width :400px;
     margin-left: -10px;
-    background: lightskyblue;
+    /* background: lightskyblue; */
     align-items: center;
     justify-content: center;
+    margin-top: 60px;
+    
 }
 .labelcss{
     height:10px; 
@@ -84,16 +102,23 @@ align-content: center;
 button{
     margin-top: 10px;
     margin-left: 50%;
+    background-color:#EFF6FF;
 }
 
 .createacc_submit{
-    background-color:#006FCB;
-    color:white;
+    /* background-color:#006FCB; */
+    /* color:white; */
     cursor: pointer;
     margin-top: 10px;
     margin-left: 25%;
     height: 40px;
     width:205px;
     border-radius: 4px;
+    background-color:#EFF6FF;
 
+}
+.createacc_submit:hover{
+    background-color: #006FCB;
+    cursor: pointer;
+    color:white;
 }

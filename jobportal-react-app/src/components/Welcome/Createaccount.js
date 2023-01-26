@@ -44,7 +44,7 @@ export default function CreateAccount() {
     <div className="createac_page" >
       <div className="header" >
         <div>
-          <img src="/images/HV.png" alt="HV_logo" height='40px' width='200px' />
+          <img src="/images/HV1.png" alt="HV_logo" height='40px' width='200px' />
         </div>
         <div className="header_content">
           <h5>Hero Vired Job Portal</h5>
@@ -55,12 +55,13 @@ export default function CreateAccount() {
       </div>
       <div className="createac_content">
         {/* <img src="/images/resume.jpg" alt="jobimage" /> */}
+
         <div className="createac_form">
           <h2>Create your Account</h2>
-          <h4>Please enter your email and password to register to our job portal:</h4>
+          {/* <h4>Please enter your email and password to register to our job portal:</h4> */}
           <form >
 
-            <label className="labelcss" for="email" >Email     :</label>
+            <label className="labelcss" for="email" >E-mail ID:</label>
             <input className="inputcss" type="text" id="email" placeholder="useremail" name="email" onChange={handleChange} /> <br></br>
             <label className="labelcss" for="pswd" >Password:</label>
             <input className="inputcss" type="password" id="pswd" placeholder="password" name="password" onChange={handleChange} /><br></br>
