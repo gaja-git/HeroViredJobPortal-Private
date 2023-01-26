@@ -13,7 +13,7 @@ class LoginController < ApplicationController
             if (uval.authenticate(params[:password]))
                 session[:current_user_id] = uval.id
 
-                render json: "Login successfull!!"
+                render html: "Login successfull!!"
             else
                 render json: "Wrong password!"
             end
