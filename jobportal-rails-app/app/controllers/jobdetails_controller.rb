@@ -2,7 +2,7 @@ class JobdetailsController < ApplicationController
 
     skip_before_action :verify_authenticity_token
     def index
-        current_user = Useracc.find_by_id(session[:current_user_id])
+        current_user = Useraccount.find_by_id(session[:current_user_id])
         if(current_user.nil?)
             render json: "Not valid user"
         else
