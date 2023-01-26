@@ -5,7 +5,7 @@ class ProfileController < ApplicationController
     def index 
         reg_user = Useraccount.find_by_id(session[:current_user_id])
         if !reg_user.nil? 
-            render json: Useraccount.all 
+            render json: Profile.all 
         else
            render json: "Not authorised to view all Profiles!" 
         end
@@ -13,7 +13,7 @@ class ProfileController < ApplicationController
     def show 
         reg_user = Useraccount.find_by_id(session[:current_user_id])
         if !reg_user.nil? 
-            v = Useraccount.find(params[:id]) 
+            v = Profile.find(params[:id]) 
             render json: v
         else
             render json: "Not authorised to see candidates info!" 
@@ -27,7 +27,7 @@ class ProfileController < ApplicationController
             !params[:profilepic].nil? and !params[:skills].nil? and !params[:resumelink].nil? and !params[:preferredlocation].nil?
 
             if (v)
-            p=Useraccount.create(
+            p=Profile.create(
                 'firstname': params[:firstname],
                 'lastname': params[:lastname],
                 'email': params[:email],
@@ -55,7 +55,8 @@ class ProfileController < ApplicationController
     def update 
         reg_user = Useraccount.find_by_id(session[:current_user_id])
         if !reg_user.nil? 
-            p = Useraccount.find(
+            p = Profile.find(params[:id])
+             p.update(
                 'firstname': params[:firstname],
                 'lastname': params[:lastname],
                 'email': params[:email],
@@ -81,7 +82,7 @@ class ProfileController < ApplicationController
     def destroy 
         reg_user = Useraccount.find_by_id(session[:current_user_id])
         if !reg_user.nil? 
-            p = Useraccount.find(params[:id])
+            p = Profile.find(params[:id])
             p.destroy
             render json: "Profile info Deleted" 
         else 
