@@ -1,4 +1,4 @@
-class jobdetails < ApplicationRecord 
+class Jobdetails < ApplicationRecord 
 
     validates :jobtitle, :companyname, :jobcode, presence: true
    
