@@ -1,28 +1,33 @@
-.job_content_container_gj{
+.dashBoard_job_content_container_gj{
     width:100%;
     height:100%;
-    /* display: flex; */
+    
     align-items: center;
     padding-left: 35px;
     /* border: solid black; */
    justify-content: center;
   
    margin: 0px;
+   display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
    
 
 }
-.job_content_gj{
+.dashBoard_job_content_gj{
     width:95%;
-    height: 35%;
+    height: 38%;
     /* display: flex; */
     /* background-color: green; */
     background: white;
     
     border-radius: 10px;
     margin-top:10px;
+    overflow-wrap: normal;
+    overflow: hidden;
 }
 
-.job_title_gj{
+.dashBoard_job_title_gj{
     width:100%;
     height: 30%;
     display: flex;
@@ -43,7 +48,7 @@ color: #006FCB;
 
 /* background-color: red; */
 }
-.job_title_gj>button{
+.dashBoard_job_title_gj>button{
     align-self:right;
     /* margin-right: 0px; */
     background: #FFFFFF;
@@ -55,7 +60,7 @@ color: #006FCB;
    
 }
 
-.job_params_gj{
+.dashBoard_job_params_gj{
     width:60%;
     height: 5%;
     display: flex;
@@ -68,26 +73,27 @@ color: #006FCB;
   
 }
 
-.job_location_gj{
+.dashBoard_job_location_gj{
 
 }
 
-.job_type_gj{
+.dashBoard_job_type_gj{
     margin-left: 30px;
 
 }
 
-.job_cost_gj{
+.dashBoard_job_cost_gj{
     margin-left: 30px;
 }
 
-.job_comp_gj{
+.dashBoard_job_comp_gj{
     margin-left: 30px;
 }
 
-.job_details_gj{
+.dashBoard_job_details_gj{
     width:80%;
     height: 100%;
     margin-left: 20px;
     margin-top: 25px;
+    font-size: smaller;
 }

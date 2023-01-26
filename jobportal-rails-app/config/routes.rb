@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :login
   resources :logout
   resources :profile
+  resources :skillsrepo
 end
