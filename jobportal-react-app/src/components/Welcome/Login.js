@@ -8,6 +8,7 @@ import axios from 'axios';
 const Login = () => {
     let [info, setInfo] = useState({});
     const navigate = useNavigate();
+    
     const handleLogin = (e) => {
         setInfo({
             ...info,
@@ -17,9 +18,9 @@ const Login = () => {
     console.log(info);
 
     async function sendLogin() {
-        // let res = await axios.post("http://127.0.0.1:3001/bloguser", info)
-        // console.log(res.info);
-        navigate("/profile");
+        let res = await axios.post("/login", info)
+        console.log(res.info);
+        navigate("/profile",);
 
     }
     async function create_v() {
@@ -31,10 +32,15 @@ const Login = () => {
     return (
         
         <div className ="login_v"> 
-            <h1> Welcome to Hero Vired JobPortal!!!</h1>
-            <h2> Please enter login details here:</h2>
-           
-                    <div className="login_details">
+            <div className="logo">
+                <img src="/images/HV1.png" alt="HV_logo" height='40px' width='200px' />
+                <h1> Welcome to Hero Vired JobPortal!</h1>
+
+            </div>
+            <div className = "container_v">
+                    <h2> Login details:</h2>
+                    
+                    {/* <div className="login_details"> */}
                     <form >
                         <br></br>
                         <br></br>
@@ -54,8 +60,8 @@ const Login = () => {
                     {/* <Link to="/createaccount">
                     <button>Create account!</button>
                     </Link> */}
+                    {/* </div> */}
                     </div>
-            
                 
             
             

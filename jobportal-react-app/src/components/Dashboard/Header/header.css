@@ -8,13 +8,19 @@ align-items: center;
 flex-wrap: wrap;
 }
 .h_section1{
-    width:20%;
+    width:15%;
     height:80%;
     padding: 0%;
+    margin-left:10px;
 }
 .h_section1>.logo{
-    padding:2px 5px;
-    margin-bottom:1px;
+    padding:0px;
+    margin-top:-6px;
+}
+.h_section1>.logo:hover{
+    border: 3px solid blue;
+    cursor:pointer;
+
 }
 .h_section2{
     display:flex;
@@ -43,4 +49,8 @@ flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top:5px;
+}
+.h_section3:hover{
+    border: 4px solid blue;
+
 }

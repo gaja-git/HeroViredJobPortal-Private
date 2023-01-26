@@ -4,7 +4,7 @@ import Searchbox from "../../Dashboard/Searchbox/Searchbox"
 
 export default function Appliedjobs() {
     return (
-        <div className="alljobs">
+        <div className="appliedjobs">
             <Header />
             <div className="Searchbox">
                 <h4>Applied Jobs</h4>
