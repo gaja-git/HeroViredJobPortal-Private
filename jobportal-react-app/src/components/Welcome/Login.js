@@ -8,6 +8,7 @@ import axios from 'axios';
 const Login = () => {
     let [info, setInfo] = useState([]);
     const navigate = useNavigate();
+    
     const handleLogin = (e) => {
         setInfo({
             ...info,
@@ -35,8 +36,30 @@ const Login = () => {
     return (
 
         <div className="login_v">
-            <h1> Welcome to Hero Vired JobPortal!!!</h1>
-            <h2> Please enter login details here:</h2>
+            <div className="logo">
+                <img src="/images/HV1.png" alt="HV_logo" height='40px' width='200px' />
+                <h1> Welcome to Hero Vired JobPortal!</h1>
+
+            </div>
+            <div className = "container_v">
+                    <h2> Login details:</h2>
+         
+            {/* <div className="login_details"> */}
+                <form >
+                    <br></br>
+                    <br></br>
+                    <label for="email"> E-mail ID: </label>
+                    <input type="text" id="email" placeholder='email' name='email' onChange={handleLogin} /><br></br>
+                    <label for="pass"> Password: </label>
+                    <input type="text" id="pass" placeholder='password' name='password' onChange={handleLogin} /><br></br>
+                    <input type="submit" className="login_submit" onClick={sendLogin} />
+                </form>
+
+
+                <span className="login_span"> Are you a new job seeker? </span><br></br>
+                {/* <span> Please create your account </span><br></br> */}
+                {/* <input type="submit" Create Account onClick={create_v}  /> */}
+                <button onClick={create_v}>Please Create Account </button>
 
             <div className="login_details">
                 <form >
@@ -58,12 +81,11 @@ const Login = () => {
                 {/* <Link to="/createaccount">
                     <button>Create account!</button>
                     </Link> */}
-            </div>
-
-
-
-
-
+                    {/* </div> */}
+                    </div>
+             </div>   
+            
+            
 
         </div>
     );

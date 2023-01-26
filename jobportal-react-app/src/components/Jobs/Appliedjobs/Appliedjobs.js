@@ -50,10 +50,8 @@ export default function Appliedjobs() {
     }, [])
     return (
         <div className="appliedjobs">
-            <div className="appliedjobs_header">
-                <Header />
-            </div>
-            <div className="appliedjobs_Searchbox">
+            <Header />
+            <div className="Searchbox">
                 <h4>Applied Jobs</h4>
                 <Searchbox></Searchbox>
             </div>

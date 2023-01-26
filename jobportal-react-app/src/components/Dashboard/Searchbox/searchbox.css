@@ -11,6 +11,15 @@
     height:50%;
     width:75%;
     margin-left:35px;
+    border: 1px solid blue;
+
+}
+.searchbox>.search_v>input:hover{
+    height:50%;
+    width:75%;
+    margin-left:35px;
+    border: 3px solid blue;
+
 }
 .searchbox>.search_v>button{
     margin-left:5%;
@@ -19,6 +28,12 @@
     background-color: #006FCB;
     color:white;
     font-size: large;
+    border: 1px solid blue;
+
+}
+.searchbox>.search_v>button:hover{
+    border: 3px solid blue;
+
 }
 .searchbox>.drop_v{
     margin-left:20px;
