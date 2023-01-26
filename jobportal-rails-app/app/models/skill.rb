@@ -1,4 +1,4 @@
-class Skillsrepo < ApplicationRecord 
+class Skill < ApplicationRecord 
 
     validates :skillName, presence: true
    

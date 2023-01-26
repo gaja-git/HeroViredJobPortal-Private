@@ -1,5 +1,4 @@
-class SkillsrepoController < ApplicationController
-
+class SkillController < ApplicationController
     skip_before_action :verify_authenticity_token
     def index
         current_user = Useraccount.find_by_id(session[:current_user_id])
@@ -14,7 +13,7 @@ class SkillsrepoController < ApplicationController
         v = !params[:skillName].nil?
 
         if (v)
-          p=Skillsrepo.create('skillName': params[:skillName] )
+          p=Skill.create('skillName': params[:skillName] )
         #   puts "resultcreateacc=#{p}"
           render json: "Skill Added"
         else
@@ -22,7 +21,7 @@ class SkillsrepoController < ApplicationController
         end
     end
     def show 
-        v = Skillsrepo.find(params[:id])
+        v = Skill.find(params[:id])
         render json: v
     end
 end
