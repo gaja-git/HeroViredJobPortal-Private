@@ -41,22 +41,10 @@ This will resolve the dependency error while executing in different systems
  * login and logut - Vidhya
  * candidateapplications - Gaja
  * profile - Vidhya
+ * skill - Gaja
+ * eligiblejobs -Gaja
+ * appliedjobs -Gaja
  
-## To resolve CORS Policy error:  
-* gem "rack-cors"
-bundle install
-
-Create cors.rb in
-* config/initializers/cors.rb
-
-Copy below code inside cors.rb
-	1.Rails.application.config.middleware.insert_before 0, Rack::Cors do
-    		allow do
-   	   origins 'http://localhost:3000'
-    	  resource '*', headers: :any, methods: [:get, :post, :update, :delete, :put]
-   	 end
- 	 end
-
 ## For authentication we need bcrypt
 * Uncomment line 37 in gem file
 * bundle install
@@ -69,6 +57,8 @@ Copy below code inside cors.rb
 * \c name -> will connect to our new database
 * \dt -> to view tables after migration
 * select * from tablename; -> display table with column names and values.
+
+
 
 
 # README
