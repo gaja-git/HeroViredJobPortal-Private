@@ -11,14 +11,14 @@ class LoginController < ApplicationController
         if uval.nil? 
             render json: "User account does not exit"
         else 
-            # if (uval.authenticate(params[:password]))
-                # session[:current_user_id] = uval.id
+            if (uval.authenticate(params[:password]))
+                session[:current_user_id] = uval.id
 
                 render json: "Login successfull!!"
-            # else
-            #     render json: "Wrong password!"
-            # end
-            # render json: "User account exists" 
+            else
+                render json: "Wrong password!"
+            end
+             
         end
 
     end

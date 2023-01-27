@@ -11,6 +11,17 @@ class JobdetailsController < ApplicationController
         #render json: Jobdetails.all
     end
 
+    # def show
+    #     current_user = Useraccount.find_by_id(session[:current_user_id])
+    #     if(current_user.nil?)
+    #         render json: "Not valid user"
+    #     else
+    #         j = Jobdetails.
+    #         render json: Jobdetails.all
+    #     end
+    #     #render json: Jobdetails.all
+    # end
+
     def create
         current_user = Useraccount.find_by_id(session[:current_user_id])
         if(current_user.nil?)

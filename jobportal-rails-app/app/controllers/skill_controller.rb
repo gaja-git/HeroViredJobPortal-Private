@@ -5,7 +5,7 @@ class SkillController < ApplicationController
         if(current_user.nil?)
             render json: "Not valid user"
         else
-            render json: Skillsrepo.all
+            render json: Skill.all
         end
         #render json: Jobdetails.all
     end

@@ -5,11 +5,13 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "application#index"
   resources :jobdetails
-  resources :candidateapplications
+  resources :candidateapplication
   
   resources :useraccount
   resources :login
   resources :logout
   resources :profile
   resources :skill
+  resources :eligiblejobs
+  resources :appliedjobs
 end
