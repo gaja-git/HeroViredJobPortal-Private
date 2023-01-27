@@ -18,8 +18,8 @@ const Profile = () => {
     console.log(info);
 
     async function sendProfile() {
-        let res = await axios.post("/profile", info)
-        console.log(res.info);
+        // let res = await axios.post("/profile", info)
+        // console.log(res.info);
         alert("Candidate profile uploaded successfully!")
         navigate("/JobCanvas");
 

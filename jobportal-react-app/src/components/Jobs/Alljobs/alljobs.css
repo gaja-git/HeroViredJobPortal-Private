@@ -2,27 +2,34 @@
     width: 100%;
     height: 100%;
     /* background: #EFF6FF; */
-    background-color: red;
+    /* background-color: red; */
     
 }
 .alljobs_header{
     width: 100%;
-    height: 1%;
-    background-color: aqua;
+    /* height: 1%; */
+    /* background-color: aqua; */
+}
+.alljobs_Searchbox>h4{
+    padding:0%;
+    margin:0%;
+    margin-left: 35px;
+    margin-top: 5px;
+
 }
 .alljobs_Searchbox{
     width: 100%;
-    height: 13%;
-    background-color: brown;
+    /* height: 13%; */
+    /* background-color: brown; */
 }
 
 
 .alljobs_job_content_container_gj{
     width:100%;
-    height:80%;
+    /* height:80%; */
     
     align-items: center;
-    padding-left: 35px;
+    /* padding-left: 35px; */
     /* border: solid black; */
    justify-content: center;
   
@@ -30,14 +37,14 @@
    display: flex;
    flex-wrap: wrap;
    overflow-y: scroll;
-   background-color: blue;
+   /* background-color: blue; */
 
 }
 .alljobs_job_content_gj{
     width:95%;
-    height: 35%;
+    /* height: 35%; */
     /* display: flex; */
-    background-color: green;
+    /* background-color: green; */
     /* background: white; */
     
     border-radius: 10px;
@@ -49,7 +56,7 @@
 
 .alljobs_job_title_gj{
     width:100%;
-    height: 30%;
+    /* height: 30%; */
     display: flex;
     flex-direction: row;
     /* background-color: blue; */
@@ -61,28 +68,33 @@ font-weight: normal;
 font-size:medium;
 line-height: 0px;
 /* identical to box height, or 36px */
-margin-left: 20px;
+/* margin-left: 20px; */
 
 
 color: #006FCB;
 
 /* background-color: red; */
 }
+.alljobs_job_title_gj>h3{
+    width:50%;
+    /* background-color: red; */
+margin-left: 20px;
+}
 .alljobs_job_title_gj>button{
-    align-self:right;
+    /* align-self:right; */
     /* margin-right: 0px; */
     background: #FFFFFF;
     border: 1px solid #006FCB;
    border-radius: 10px;
    /* margin-right: -100px; */
-   margin-left: 80%;
+   margin-right: 3%;
   
    
 }
 
 .alljobs_job_params_gj{
     width:60%;
-    height: 5%;
+    /* height: 5%; */
     display: flex;
     flex-direction: row;
     font-size:smaller;
@@ -112,7 +124,7 @@ color: #006FCB;
 
 .alljobs_job_details_gj{
     width:80%;
-    height: 100%;
+    /* height: 100%; */
     margin-left: 20px;
     margin-top: 25px;
     font-size: smaller;

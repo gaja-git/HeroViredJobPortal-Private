@@ -25,13 +25,13 @@ export default function CreateAccount() {
     console.log("test user creation", createAccData)
     console.log("before axios")
     try {
-      let res = await axios.post("/useraccount", createAccData);
-      console.log("res", res)
+      // let res = await axios.post("/useraccount", createAccData);
+      // console.log("res", res)
       console.log("user creation after")
       console.log("Navigate to login");
 
       // alert("User account is created successfully ! Please login now.")
-      navigate("/");
+      navigate("/profile");
 
     } catch (error) {
       console.log(error);

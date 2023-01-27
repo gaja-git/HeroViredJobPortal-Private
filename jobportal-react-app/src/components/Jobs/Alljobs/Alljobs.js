@@ -38,17 +38,17 @@ export default function Alljobs() {
 
     useEffect(() => {
         const fetchData = async () => {
-            let res = await axios.get("/jobdetails")
-            console.log("res", res.data)
-            setAllJobData(res.data)
+            // let res = await axios.get("/jobdetails")
+            // console.log("res", res.data)
+            // setAllJobData(res.data)
         }
         fetchData()
     }, [])
     return (
         <div className="alljobs">
-            <div className="alljobs_header">
+                <div className="alljobs_header">
                 <Header />
-            </div>
+                </div>
             <div className="alljobs_Searchbox">
                 <h4>Jobs in Domain</h4>
                 <Searchbox></Searchbox>

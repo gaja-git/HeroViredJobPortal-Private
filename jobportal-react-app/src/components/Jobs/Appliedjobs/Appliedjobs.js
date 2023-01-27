@@ -49,12 +49,10 @@ export default function Appliedjobs() {
         fetchData()
     }, [])
     return (
-        <div className="appliedjobs">
-            <Header />
-            <div className="Searchbox">
+        <div className="appliedjobs_v">
+                <Header />
                 <h4>Applied Jobs</h4>
                 <Searchbox></Searchbox>
-            </div>
             <div className="appliedjobs_job_content_container_gj">
                 {jobs.length ? (jobs.map((ele) => (<div className="appliedjobs_job_content_gj">
                     <div className="appliedjobs_job_title_gj">

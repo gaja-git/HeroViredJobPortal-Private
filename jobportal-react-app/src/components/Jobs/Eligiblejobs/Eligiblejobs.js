@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import Header from "../../Dashboard/Header/Header"
 import axios from "axios"
 import Searchbox from "../../Dashboard/Searchbox/Searchbox"
-
+import "./eligiblejob.css"
 
 export default function Eligiblejobs() {
     let [eligiblejobData, setEligibleJobData] = useState([])

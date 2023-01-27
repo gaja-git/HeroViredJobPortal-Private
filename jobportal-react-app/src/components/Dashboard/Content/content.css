@@ -1,9 +1,9 @@
 .dashBoard_job_content_container_gj{
-    width:100%;
+    width:98%;
     height:100%;
     
     align-items: center;
-    padding-left: 35px;
+    margin-left: 35px;
     /* border: solid black; */
    justify-content: center;
   
@@ -41,21 +41,26 @@ font-weight: normal;
 font-size:medium;
 line-height: 0px;
 /* identical to box height, or 36px */
-margin-left: 20px;
+/* margin-left: 20px; */
 
 
 color: #006FCB;
 
 /* background-color: red; */
 }
-.dashBoard_job_title_gj>button{
-    align-self:right;
+.dashBoard_job_title_gj>h3{
+    width:88%;
+    /* background-color: red; */
+    margin-left: 20px;
+}
+.dashBoard_job_title_gj>.app>button{
+    /* align-self:right; */
     /* margin-right: 0px; */
     background: #FFFFFF;
     border: 1px solid #006FCB;
    border-radius: 10px;
    /* margin-right: -100px; */
-   margin-left: 80%;
+   margin-right: -10%;
   
    
 }
@@ -69,31 +74,43 @@ color: #006FCB;
     
      justify-content:left ; 
      margin-left: 20px;
-     margin-top: 15px;
+     margin-top: 8px;
   
 }
 
-.dashBoard_job_location_gj{
+.dashBoard_job_location_gj>span>i{
+    margin-right: 10px;
 
 }
 
 .dashBoard_job_type_gj{
     margin-left: 30px;
-
+    /* margin-right: 30px; */
 }
+.dashBoard_job_type_gj>span>i{
+    /* margin-left: 30px; */
+    margin-right: 10px;
+}
+
 
 .dashBoard_job_cost_gj{
     margin-left: 30px;
 }
+.dashBoard_job_cost_gj>span>i{
+    margin-right: 10px;
+}
 
 .dashBoard_job_comp_gj{
     margin-left: 30px;
+}
+.dashBoard_job_comp_gj>span>i{
+    margin-right: 10px;
 }
 
 .dashBoard_job_details_gj{
     width:80%;
     height: 100%;
     margin-left: 20px;
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: smaller;
 }

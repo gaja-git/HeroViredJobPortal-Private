@@ -19,16 +19,16 @@ const Login = () => {
 
     async function sendLogin(){
 
-        console.log(info);
-        let res = await axios.get('/login', info)
-        console.log(res, "res");
+        // console.log(info);
+        // let res = await axios.post('/login', info)
+        // console.log(res, "res");
         // if (res.data)
             navigate('/jobcanvas');
 
     }
     async function create_v() {
-        let res = await axios.post("/useraccount", info)
-        console.log(res.info);
+        // let res = await axios.post("/useraccount", info)
+        // console.log(res.info);
         navigate("/createaccount");
 
     }

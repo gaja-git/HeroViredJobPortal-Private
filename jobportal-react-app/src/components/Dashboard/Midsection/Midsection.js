@@ -66,7 +66,7 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                                <i className="fa fa-user-circle" ></i>
+                             <img src="/images/allJobs.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -88,7 +88,7 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                                <i class="fa fa-user-circle" ></i>
+                            <img src="/images/eJobs.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -109,7 +109,7 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                                <i class="fa fa-user-circle" ></i>
+                            <img src="/images/appliedJobs.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -134,7 +134,7 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                                <i class="fa fa-user-circle" ></i>
+                            <img src="/images/shortlisted.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -148,27 +148,11 @@ export default function Midsection() {
                             </div>
                         </div>
                     </div>
+                    
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                                <i class="fa fa-user-circle" ></i>
-                            </div>
-                            <div className="all_job_text_display_gj">
-                                <div className="all_job_text1_gj">
-                                    <Link to="/rejected">
-                                        Rejected
-                                    </Link>
-                                </div >
-                                <div className="all_job_text2_gj">
-                                    100
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="all_job_section_gj">
-                        <div className="all_job_inner_frame_gj">
-                            <div className="all_job_icon_frame_gj">
-                                <i class="fa fa-user-circle" ></i>
+                            <img src="/images/interview.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -185,7 +169,25 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                                <i class="fa fa-user-circle" ></i>
+                            <img src="/images/shortlisted.png" alt="HV_logo" height='40px' width='40px' />
+                            </div>
+                            <div className="all_job_text_display_gj">
+                                <div className="all_job_text1_gj">
+                                    <Link to="/rejected">
+                                        Rejected
+                                    </Link>
+                                </div >
+                                <div className="all_job_text2_gj">
+                                    100
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="all_job_section_gj">
+                        <div className="all_job_inner_frame_gj">
+                            <div className="all_job_icon_frame_gj">
+                            <img src="/images/offer.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
