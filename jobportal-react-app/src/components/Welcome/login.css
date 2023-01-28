@@ -51,14 +51,14 @@
     /* margin-top:5%; */
 }
 
-.container_v>form{
+.container_v>.login_details{
     height:50%;
     width:100%;
     text-align: center;
  background-color: white;
 
 }
-.container_v>form>label{
+.container_v>.login_details>label{
    /* height:20px; */
    /* width :200px; */
    padding: 5px;
@@ -67,14 +67,14 @@
    color:blue;
 
 }
-.container_v>form>input{
+.container_v>.login_details>input{
     border-radius: 4px;   
     /* height:30px;  */
     /* width :200px; */
     padding: 5px;
     margin-bottom: 10px;
 }
-.container_v>form>.login_submit{
+.container_v>.login_details>.login_submit{
     background-color:#EFF6FF;
     /* color:white; */
     cursor: pointer;
@@ -82,7 +82,7 @@
     font-weight: bold;
 
 }
-.container_v>form>.login_submit:hover{
+.container_v>.login_details>.login_submit:hover{
     background-color: #006FCB;
     cursor: pointer;
     color:white;

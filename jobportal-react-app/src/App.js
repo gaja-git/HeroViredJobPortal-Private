@@ -9,8 +9,8 @@ import Eligiblejobs from './components/Jobs/Eligiblejobs/Eligiblejobs';
 import Shortlisted from './components/Myapplications/Shortlisted';
 import Rejected from './components/Myapplications/Rejected';
 import Appliedjobs from './components/Jobs/Appliedjobs/Appliedjobs';
-import Interviewing from './components/Myapplications/Interviewing/Interviewing'
-import Offerreceived from './components/Myapplications/Offerreceived/Offerreceived'
+import Interviewing from './components/Myapplications/Interviewing/Interviewing';
+import Offerreceived from './components/Myapplications/Offerreceived/Offerreceived';
 
 
 function App() {

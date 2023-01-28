@@ -1,35 +1,32 @@
 import React, { useState } from 'react';
 
-import { BrowserRouter as Router, Switch, Route, useNavigate, Link } from "react-router-dom";
-// import './login.css'
+import { useNavigate } from "react-router-dom";
+import './login.css'
 
 import axios from 'axios';
 
 const Login = () => {
-    let [info, setInfo] = useState({});
+    let [ldata, setLdata] = useState({});
     const navigate = useNavigate();
 
     function handleLogin(e) {
-        setInfo({
-            ...info,
+        setLdata({
+            ...ldata,
             [e.target.name]: e.target.value
         });
     }
-    console.log("info", info);
+    console.log("ldata", ldata);
 
     async function sendLogin() {
 
-        console.log("infodata", info);
-        let res = await axios.post('/login', info)
-        console.log("infodata-Aft", info);
-        // console.log(res, "res");
-        //if (res.data)
+        console.log(ldata);
+        let res = await axios.post("http://127.0.0.1:3001/login", ldata)
+        console.log(res, "res");
+        // if (res.data)
         navigate('/jobcanvas');
 
     }
     async function create_v() {
-        // let res = await axios.post("/useraccount", info)
-        // console.log(res.info);
         navigate("/createaccount");
 
     }
@@ -44,13 +41,13 @@ const Login = () => {
             <div className="container_v">
                 <h2> Login details:</h2>
 
-                {/* <div className="login_details"> */}
-                <div >
+                <div className="login_details">
+
                     <br></br>
                     <br></br>
-                    <label htmlFor="email"> E-mail ID: </label>
+                    <label> E-mail ID: </label>
                     <input type="text" id="email" placeholder='email' name='email' onChange={handleLogin} /><br></br>
-                    <label htmlFor="pass"> Password: </label>
+                    <label> Password: </label>
                     <input type="text" id="pass" placeholder='password' name='password' onChange={handleLogin} /><br></br>
                     <input type="submit" className="login_submit" onClick={sendLogin} />
                 </div>
