@@ -5,52 +5,55 @@ import axios from "axios"
 
 export default function Midsection() {
     let [midalljobData, setMidAllJobData] = useState([])
-    let allJobCount, eligibleJobCount, appliedJobCount
-    const jobs = [
-        {
-            jobtitle: "Lead Business Analyst",
-            jobdescription: "Looking for a highly motivated and experienced Pre-Sales Lead/Architect with retail, corporate and digital banking domain experience. You will be responsible for building the blueprints, proposals, proof-of-concepts, solutions to support the product roadmap and various RFPs at the pre-sales stage.",
-            companyname: "Lentra AI",
-            location: "Pune",
-            jobtype: "Full Time",
-            posteddate: '2022-12-22',
-            salary: 2200000,
-            domain: "Cloud",
-            jobcode: "A101",
-            skillsrequired: "AWS,Java",
-            applicationstatus: "Open"
-        },
-        {
-            jobtitle: "Technical lead",
-            jobdescription: "Looking for a highly motivated and experienced technical lead with problem solving mindset.Very strong in communication",
-            companyname: "Quest",
-            location: "Banglore",
-            jobtype: "Full Time",
-            posteddate: "2022-12-22",
-            salary: 2200000,
-            domain: "Testing",
-            jobcode: "B102",
-            skillsrequired: "c++,c#",
-            applicationstatus: "Open"
-        }
-    ]
+    let [midelegiblejobData, setEligibleAllJobData] = useState([])
+    let [midAppliedjobData, setAppliedAllJobData] = useState([])
+
+    // const jobs = [
+    //     {
+    //         jobtitle: "Lead Business Analyst",
+    //         jobdescription: "Looking for a highly motivated and experienced Pre-Sales Lead/Architect with retail, corporate and digital banking domain experience. You will be responsible for building the blueprints, proposals, proof-of-concepts, solutions to support the product roadmap and various RFPs at the pre-sales stage.",
+    //         companyname: "Lentra AI",
+    //         location: "Pune",
+    //         jobtype: "Full Time",
+    //         posteddate: '2022-12-22',
+    //         salary: 2200000,
+    //         domain: "Cloud",
+    //         jobcode: "A101",
+    //         skillsrequired: "AWS,Java",
+    //         applicationstatus: "Open"
+    //     },
+    //     {
+    //         jobtitle: "Technical lead",
+    //         jobdescription: "Looking for a highly motivated and experienced technical lead with problem solving mindset.Very strong in communication",
+    //         companyname: "Quest",
+    //         location: "Banglore",
+    //         jobtype: "Full Time",
+    //         posteddate: "2022-12-22",
+    //         salary: 2200000,
+    //         domain: "Testing",
+    //         jobcode: "B102",
+    //         skillsrequired: "c++,c#",
+    //         applicationstatus: "Open"
+    //     }
+    // ]
 
     useEffect(() => {
         const fetchData = async () => {
             let res1 = await axios.get("/jobdetails")
             console.log("res-alljobs", res1.data)
             setMidAllJobData(res1.data)
-            allJobCount = midalljobData.length
+
 
             let res2 = await axios.get("/eligiblejobs")
             console.log("res-eligiblejobs", res2.data)
-            setMidAllJobData(res2.data)
-            eligibleJobCount = midalljobData.length
+            setEligibleAllJobData(res2.data)
+            console.log(midelegiblejobData.length)
+
 
             let res3 = await axios.get("/appliedjobs")
             console.log("res-appliedjobs", res3.data)
-            setMidAllJobData(res3.data)
-            allJobCount = midalljobData.length
+            setAppliedAllJobData(res3.data)
+
 
         }
         fetchData()
@@ -66,7 +69,7 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                             <img src="/images/allJobs.png" alt="HV_logo" height='40px' width='40px' />
+                                <img src="/images/allJobs.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -75,7 +78,7 @@ export default function Midsection() {
                                     </Link>
                                 </div >
                                 <div className="all_job_text2_gj">
-                                    100
+                                    {midalljobData.length}
                                 </div>
                                 {/* <div className="all_jobs_right_arrow">
                                 <button></button>
@@ -88,7 +91,7 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                            <img src="/images/eJobs.png" alt="HV_logo" height='40px' width='40px' />
+                                <img src="/images/eJobs.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -98,7 +101,7 @@ export default function Midsection() {
                                     </Link>
                                 </div >
                                 <div className="all_job_text2_gj">
-                                    100
+                                    {midelegiblejobData.length}
                                 </div>
                             </div>
                             {/* <div className="all_jobs_right_arrow">
@@ -109,7 +112,7 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                            <img src="/images/appliedJobs.png" alt="HV_logo" height='40px' width='40px' />
+                                <img src="/images/appliedJobs.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -118,7 +121,7 @@ export default function Midsection() {
                                     </Link>
                                 </div >
                                 <div className="all_job_text2_gj">
-                                    50
+                                    {midAppliedjobData.length}
                                 </div>
                             </div>
                             {/* <div className="all_jobs_right_arrow">
@@ -134,7 +137,7 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                            <img src="/images/shortlisted.png" alt="HV_logo" height='40px' width='40px' />
+                                <img src="/images/shortlisted.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -148,11 +151,11 @@ export default function Midsection() {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                            <img src="/images/interview.png" alt="HV_logo" height='40px' width='40px' />
+                                <img src="/images/interview.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -169,7 +172,7 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                            <img src="/images/shortlisted.png" alt="HV_logo" height='40px' width='40px' />
+                                <img src="/images/shortlisted.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -187,7 +190,7 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                            <img src="/images/offer.png" alt="HV_logo" height='40px' width='40px' />
+                                <img src="/images/offer.png" alt="HV_logo" height='40px' width='40px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
-import './profile.css'
+// import './profile.css'
 // import image from "../public/images/profile.jpg"
 
 
@@ -25,13 +25,13 @@ const Profile = () => {
 
     }
     return (
-        <div className ="profile_v">
+        <div className="profile_v">
             <div className="plogo">
                 <img src="/images/HV1.png" alt="HV_logo" height='40px' width='200px' />
                 <h1> Welcome to Hero Vired JobPortal!</h1>
             </div>
             {/* <h2> Create profile: </h2> */}
-            <form>
+            <div>
                 <label for="firstName"> First Name: </label>
                 <input type="text" id="firstName" placeholder='firstName' name='firstName' onChange={handleProfile} /><br></br>
                 <label for="lastName"> Last Name: </label>
@@ -68,7 +68,7 @@ const Profile = () => {
                 {/* <Link to="/JobCanvas">
             <button>Job Canvas - Update later</button>
             </Link> */}
-            </form>
+            </div>
         </div>
     );
 }
