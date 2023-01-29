@@ -1,19 +1,63 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef, useContext } from "react"
 import './content.css'
 import axios from "axios"
+import DataContext from "../../context/DataContext";
 
 
 export default function Content() {
         let [jobData, setJobData] = useState([])
+        let [applyText, setApplyText] = useState("Apply")
+        const applyref = useRef("Apply")
+        let ctx = useContext(DataContext);
 
-        function applied() {
+        useEffect(() => {
+                console.log("contents-useeffect")
+                const fetchData = async () => {
+                        let res = await axios.get("/jobdetails")
+                        console.log("res-jobdetails", res.data)
+                        setJobData(res.data)
+                }
+                fetchData()
+
+        }, [])
+
+        function onApplyClick() {
+                console.log("inside onclick")
+                // if (applyText === "Apply")
+                setApplyText("Applied");
+                // if (applyref.current) {
+                //         console.log("inside apply ref")
+                //         // applyref.current.innerText = "Applied"
+                //         console.log("after applied")
+                // }
                 // let sidebar = document.querySelector(".app")
                 // let childsidebar = sidebar.children;
                 // for (let i = 0; i < childsidebar.length; i++) {
                 //         childsidebar[i].innerText = "Applied"
                 // }
+                //console.log("appjob", appjob)
+                //SetAppliedData(appjob)
         }
 
+        // const SetAppliedData = async (appjobdata) => {
+        //         let today = new Date()
+        //         //let date = today.getDate() + '-' + parseInt(today.getMonth() + 1) + '-' + today.getFullYear()
+        //         let date = today.getFullYear() + '-' + parseInt(today.getMonth() + 1) + '-' + today.getDate()
+        //         console.log(date)
+        //         let candAppData = {
+        //                 jobid: appjobdata.id,
+        //                 userid: ctx.userId,
+        //                 jobcoode: appjobdata.jobcode,
+        //                 applieddate: date,
+        //                 candidateapplicationstatus: "Shortlisted",
+        //                 location: appjobdata.location,
+        //                 posteddate: appjobdata.location
+        //         }
+        //         console.log("candAppData", candAppData)
+        //         let res = await axios.post("/candidateapplication", candAppData)
+        //         console.log("resCanApplied data", res.data)
+
+        // }
         const jobs = [
                 {
                         jobtitle: "Lead Business Analyst",
@@ -43,30 +87,15 @@ export default function Content() {
                 }
         ]
 
-        useEffect(() => {
-                // let sidebar = document.querySelector("button");
-                // let childsidebar = sidebar.children;
-                // for (let i=0; i<childsidebar.length;i++){
-                //         childsidebar[i].addEventListener("mouseenter", ()=>{
-                //         childsidebar[i].innerText = "Applied"
-                //         })
-                // }
-                const fetchData = async () => {
-                        let res = await axios.get("/jobdetails")
-                        console.log("res", res.data)
-                        setJobData(res.data)
-                }
-                fetchData()
 
 
-        }, [])
         return (
                 <div className="dashBoard_job_content_container_gj">
                         {jobs.length ? (jobs.map((ele) => (<div className="dashBoard_job_content_gj">
                                 <div className="dashBoard_job_title_gj">
                                         <h3>{ele.jobtitle}</h3>
                                         <div className="app">
-                                                <button onClick={applied}>Apply</button>
+                                                <button onClick={onApplyClick()}>{applyText}</button>
                                         </div>
                                 </div>
 

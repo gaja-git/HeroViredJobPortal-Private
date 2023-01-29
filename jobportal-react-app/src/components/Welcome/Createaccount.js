@@ -25,7 +25,7 @@ export default function CreateAccount() {
     console.log("test user creation", createAccData)
     console.log("before axios")
     try {
-      let res = await axios.post("http://127.0.0.1:3001/useraccount", createAccData);
+      let res = await axios.post("/useraccount", createAccData);
       console.log("res", res)
       console.log("user creation after")
       console.log("Navigate to login");

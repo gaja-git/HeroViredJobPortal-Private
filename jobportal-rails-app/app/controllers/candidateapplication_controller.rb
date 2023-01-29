@@ -5,7 +5,8 @@ class CandidateapplicationController < ApplicationController
         if(current_user.nil?)
             render json: "Not valid user"
         else
-            render json: Candidateapplication.all
+            curCandApp = Candidateapplication.find_by('userid': current_user.id)
+            render json: curCandApp
         end
         #render json: Candidateapplication.all
     end

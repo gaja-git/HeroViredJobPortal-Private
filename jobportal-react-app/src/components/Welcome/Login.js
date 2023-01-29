@@ -20,7 +20,7 @@ const Login = () => {
     async function sendLogin() {
 
         console.log(ldata);
-        let res = await axios.post("http://127.0.0.1:3001/login", ldata)
+        let res = await axios.post("/login", ldata)
         console.log(res, "res");
         // if (res.data)
         navigate('/jobcanvas');

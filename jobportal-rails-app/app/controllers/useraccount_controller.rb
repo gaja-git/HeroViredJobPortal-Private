@@ -10,15 +10,15 @@ class UseraccountController < ApplicationController
         v = !params[:email].nil? and !params[:password].nil?
 
         if (v)
-            # chkemail=Useraccount.find_by(params[:email])
-            # puts chkemail
-            # if(chkemail.nil?)
+            chkemail=Useraccount.find_by('email':params[:email])
+            puts chkemail
+            if(chkemail.nil?)
                 p=Useraccount.create('email': params[:email], 'password': params[:password], 'usertype': params[:usertype] )
-                #   puts "resultcreateacc=#{p}"
+                  puts "resultcreateacc=#{p}"
                 render json: "User Added"
-            # else
-            #     render json: "User email already exit"
-            # end
+            else
+                render json: "User email already exit"
+            end
         else
         render json: "User not added"
         end

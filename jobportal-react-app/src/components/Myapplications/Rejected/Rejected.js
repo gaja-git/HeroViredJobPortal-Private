@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../Dashboard/Header/Header";
-import Searchbox from "../Dashboard/Searchbox/Searchbox"
+import Header from "../../Dashboard/Header/Header";
+import Searchbox from "../../Dashboard/Searchbox/Searchbox"
 
 import './rejected.css'
 
@@ -9,7 +9,7 @@ export default function Rejected() {
         <div className="rejected">
             <Header />
             <h4>Rejected</h4>
-            <div className="searchbox"> 
+            <div className="searchbox">
                 <Searchbox></Searchbox>
             </div>
             <table>
@@ -135,7 +135,7 @@ export default function Rejected() {
                         <td className="job_status_gj_r">Rejected</td>
                     </tr>
                 </tbody>
-                
+
             </table>
         </div>
     )

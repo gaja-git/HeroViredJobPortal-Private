@@ -5,37 +5,10 @@ import axios from "axios"
 
 export default function Midsection() {
     let [midalljobData, setMidAllJobData] = useState([])
-    let [midelegiblejobData, setEligibleAllJobData] = useState([])
-    let [midAppliedjobData, setAppliedAllJobData] = useState([])
+    let [midelegiblejobData, setMidEligibleAllJobData] = useState([])
+    let [midAppliedjobData, setMidAppliedAllJobData] = useState([])
 
-    // const jobs = [
-    //     {
-    //         jobtitle: "Lead Business Analyst",
-    //         jobdescription: "Looking for a highly motivated and experienced Pre-Sales Lead/Architect with retail, corporate and digital banking domain experience. You will be responsible for building the blueprints, proposals, proof-of-concepts, solutions to support the product roadmap and various RFPs at the pre-sales stage.",
-    //         companyname: "Lentra AI",
-    //         location: "Pune",
-    //         jobtype: "Full Time",
-    //         posteddate: '2022-12-22',
-    //         salary: 2200000,
-    //         domain: "Cloud",
-    //         jobcode: "A101",
-    //         skillsrequired: "AWS,Java",
-    //         applicationstatus: "Open"
-    //     },
-    //     {
-    //         jobtitle: "Technical lead",
-    //         jobdescription: "Looking for a highly motivated and experienced technical lead with problem solving mindset.Very strong in communication",
-    //         companyname: "Quest",
-    //         location: "Banglore",
-    //         jobtype: "Full Time",
-    //         posteddate: "2022-12-22",
-    //         salary: 2200000,
-    //         domain: "Testing",
-    //         jobcode: "B102",
-    //         skillsrequired: "c++,c#",
-    //         applicationstatus: "Open"
-    //     }
-    // ]
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -46,13 +19,13 @@ export default function Midsection() {
 
             let res2 = await axios.get("/eligiblejobs")
             console.log("res-eligiblejobs", res2.data)
-            setEligibleAllJobData(res2.data)
+            setMidEligibleAllJobData(res2.data)
             console.log(midelegiblejobData.length)
 
 
             let res3 = await axios.get("/appliedjobs")
             console.log("res-appliedjobs", res3.data)
-            setAppliedAllJobData(res3.data)
+            setMidAppliedAllJobData(res3.data)
 
 
         }

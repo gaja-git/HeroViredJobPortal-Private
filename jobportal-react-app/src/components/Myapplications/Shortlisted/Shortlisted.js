@@ -1,10 +1,28 @@
-import React from "react";
-import Header from "../Dashboard/Header/Header";
-import Searchbox from "../Dashboard/Searchbox/Searchbox"
+import React, { useState, useEffect } from "react";
+import Header from "../../Dashboard/Header/Header";
+import Searchbox from "../../Dashboard/Searchbox/Searchbox"
+import axios from "axios";
 
 import './shortlisted.css'
 
 export default function Shortlisted() {
+
+    let [shortlistedJobData, setShortlistedJobData] = useState([])
+    let [shortlisted, setshortlisted] = useState(false)
+
+    useEffect(() => {
+        const fetchData = async () => {
+            let res = await axios.get("/appliedjobs")
+            console.log("res", res.data)
+            setShortlistedJobData(res.data)
+        }
+        fetchData()
+    }, [])
+
+    let filterData = shortlistedJobData.filter(
+        (ele) =>
+            ele.candidateapplicationstatus === "Shortlisted"
+    );
     return (
         <div className="shortlisted">
             <Header />
@@ -18,7 +36,38 @@ export default function Shortlisted() {
                         <th>POSTED DATE</th><th>APPLIED DATE</th><th>STATUS</th>
                     </tr>
                 </thead>
-                <tbody>
+                {filterData.length ? (filterData.map((ele) => {
+                    if (ele.candidateapplicationstatus === "Shortlisted") (
+                        < tbody >
+
+                            <tr><td className="job_code_gj">JPC-2</td>
+                                <td>ele.jobcode</td>
+                                <td>Product Manager</td>
+                                <td>ele.location</td>
+                                <td>ele.applieddate</td>
+                                <td>ele.posteddate</td>
+                                <td className="job_status_gj">Shortlisted</td>
+                            </tr>
+                        </tbody>
+                        // { setshortlisted(true) }
+
+                    )
+                })) :
+                    (<tbody>
+                        <tr>
+                            <td className="job_code_gj">JPC-2</td>
+                            <td>No data</td>
+                            <td>No data</td>
+                            <td>No data</td>
+                            <td>No data</td>
+                            <td className="job_status_gj">Shortlisted</td>
+                        </tr>
+                    </tbody >
+                    )
+                }
+
+                {/* <tbody>
+
                     <tr><td className="job_code_gj">JPC-2</td>
                         <td>Production Manager</td>
                         <td>Banglore</td>
@@ -152,8 +201,8 @@ export default function Shortlisted() {
                         <td>09 Jan 2022</td>
                         <td className="job_status_gj">Shortlisted</td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
+                </tbody> */}
+            </table >
+        </div >
     )
 }

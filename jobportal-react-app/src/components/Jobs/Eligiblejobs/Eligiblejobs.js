@@ -6,34 +6,6 @@ import "./eligiblejob.css"
 
 export default function Eligiblejobs() {
     let [eligiblejobData, setEligibleJobData] = useState([])
-    const jobs = [
-        {
-            jobtitle: "Lead Business Analyst",
-            jobdescription: "Looking for a highly motivated and experienced Pre-Sales Lead/Architect with retail, corporate and digital banking domain experience. You will be responsible for building the blueprints, proposals, proof-of-concepts, solutions to support the product roadmap and various RFPs at the pre-sales stage.",
-            companyname: "Lentra AI",
-            location: "Pune",
-            jobtype: "Full Time",
-            posteddate: '2022-12-22',
-            salary: 2200000,
-            domain: "Cloud",
-            jobcode: "A101",
-            skillsrequired: "AWS,Java",
-            applicationstatus: "Open"
-        },
-        {
-            jobtitle: "Technical lead",
-            jobdescription: "Looking for a highly motivated and experienced technical lead with problem solving mindset.Very strong in communication",
-            companyname: "Quest",
-            location: "Banglore",
-            jobtype: "Full Time",
-            posteddate: "2022-12-22",
-            salary: 2200000,
-            domain: "Testing",
-            jobcode: "B102",
-            skillsrequired: "c++,c#",
-            applicationstatus: "Open"
-        }
-    ]
 
     useEffect(() => {
         const fetchData = async () => {
@@ -53,7 +25,7 @@ export default function Eligiblejobs() {
                 <Searchbox></Searchbox>
             </div>
             <div className="eligiblejobs_job_content_container_gj">
-                {jobs.length ? (jobs.map((ele) => (<div className="eligiblejobs_job_content_gj">
+                {eligiblejobData.length ? (eligiblejobData.map((ele) => (<div className="eligiblejobs_job_content_gj">
                     <div className="eligiblejobs_job_title_gj">
                         <h3>{ele.jobtitle}</h3>
                         <button>Apply</button>

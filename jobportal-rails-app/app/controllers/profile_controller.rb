@@ -5,7 +5,8 @@ class ProfileController < ApplicationController
     def index 
         reg_user = Useraccount.find_by_id(session[:current_user_id])
         if !reg_user.nil? 
-            render json: Profile.all 
+            puser = Profile.find_by('email': reg_user.email)
+            render json: puser 
         else
            render json: "Not authorised to view all Profiles!" 
         end

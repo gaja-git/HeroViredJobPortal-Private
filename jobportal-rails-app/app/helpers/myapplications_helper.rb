@@ -1,0 +1,2 @@
+module MyapplicationsHelper
+end
