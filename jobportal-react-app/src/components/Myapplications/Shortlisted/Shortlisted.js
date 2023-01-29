@@ -12,7 +12,7 @@ export default function Shortlisted() {
 
     useEffect(() => {
         const fetchData = async () => {
-            let res = await axios.get("/appliedjobs")
+            let res = await axios.get("/myapplications")
             console.log("res", res.data)
             setShortlistedJobData(res.data)
         }
@@ -36,23 +36,23 @@ export default function Shortlisted() {
                         <th>POSTED DATE</th><th>APPLIED DATE</th><th>STATUS</th>
                     </tr>
                 </thead>
-                {filterData.length ? (filterData.map((ele) => {
-                    if (ele.candidateapplicationstatus === "Shortlisted") (
-                        < tbody >
+                {filterData.length ? (filterData.map((ele) =>
+                (
+                    < tbody >
 
-                            <tr><td className="job_code_gj">JPC-2</td>
-                                <td>ele.jobcode</td>
-                                <td>Product Manager</td>
-                                <td>ele.location</td>
-                                <td>ele.applieddate</td>
-                                <td>ele.posteddate</td>
-                                <td className="job_status_gj">Shortlisted</td>
-                            </tr>
-                        </tbody>
-                        // { setshortlisted(true) }
+                        <tr><td className="job_code_gj">JPC-2</td>
+                            <td>ele.jobcode</td>
+                            <td>Product Manager</td>
+                            <td>ele.location</td>
+                            <td>ele.applieddate</td>
+                            <td>ele.posteddate</td>
+                            <td className="job_status_gj">Shortlisted</td>
+                        </tr>
+                    </tbody>
+                    // { setshortlisted(true) }
 
-                    )
-                })) :
+                )
+                )) :
                     (<tbody>
                         <tr>
                             <td className="job_code_gj">JPC-2</td>

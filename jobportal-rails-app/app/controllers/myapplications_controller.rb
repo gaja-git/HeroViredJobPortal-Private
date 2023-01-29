@@ -6,9 +6,10 @@ class MyapplicationsController < ApplicationController
             render json: "Not valid user"
         else
             puts "current_user#{current_user}"
-            appliedjobs = jobcode,jobtile,location,posteddate from Jobdetails, candidateapplicationstatus,applieddate from Candidateapplications.joins("INNER JOIN Candidateapplications ON Candidateapplications.jobcode = Jobdetails.jobcode WHERE Candidateapplications.userid = #{current_user.id}")
-            puts "appliedjobs#{appliedjobs}"
-            render json: appliedjobs.all
+            myapplication = Jobdetails.joins(" INNER JOIN CandidateApplications ON Candidateapplications.jobcode = Jobdetails.jobcode WHERE Candidateapplications.userid = #{current_user.id}").select("Jobdetails.jobcode,Jobdetails.jobtitle,Jobdetails.location,Jobdetails.posteddate, CandidateApplications.candidateapplicationstatus,CandidateApplications.applieddate")
+        
+            puts "myapplication#{myapplication}"
+            render json: myapplication.all
             
         end
         #render json: Jobdetails.all
