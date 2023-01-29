@@ -43,6 +43,7 @@ This will resolve the dependency error while executing in different systems
  * skill - Gaja
  * eligiblejobs -Gaja
  * appliedjobs -Gaja
+ * myapplication -Vidhya
  
 ### Details Rails project creation overview:
 # Create Jobportal application landing routes:
