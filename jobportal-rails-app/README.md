@@ -128,18 +128,18 @@ resources :candidateapplication
 
 * rails generate controller appliedjobs
 	in /config/routes.rb
-resources :candidateapplication
+resources :appliedjobs
 * rails generate controller eligiblejobs
 in /config/routes.rb
-resources :candidateapplication
+resources :eligiblejobs
 	
 * rails generate controller login
-	create login.rb model file
+	
 	in /config/routes.rb
 resources :login
 
 * rails generate controller logout
-	create logout.rb model file
+	
 	in /config/routes.rb
 resources :logout
 
@@ -155,6 +155,11 @@ resources :skills
 
 * rails generate controller useraccount
 	create useraccount.rb model file
+	in /config/routes.rb
+resources :useraccount
+
+* rails generate controller myapplication
+	
 	in /config/routes.rb
 resources :useraccount
 
@@ -205,6 +210,41 @@ Provide the along with api and select the respective operation:
  The output will be posted in bottom section
 
 Screen shots explaining the entire postman for the project is in the document PostmanScreenshot inside the rails project
+
+# Adding Swagger for testing 
+ ### gemfile change for test 
+	group :development, :test do
+  	gem 'rspec-rails', '~> 3.5'
+  	gem "rswag-specs"
+	end
+	gem 'rswag'
+### change in database.yml
+	in test section 
+	all database name_test, usernamen, password , locathost
+ ### run migration
+	rails db:migrate RAILS_ENV=test
+ ### genereate swagger 
+	rails g rswag:specs:install
+	rails g rswag:api:install
+	rails g rswag:ui:install
+	
+ ### installion of helper file
+	rails g rspec:install
+ ### generate the swagger for controller
+	rails generate rspec:swagger JobdetailsController
+	rails generate rspec:swagger CandidateapplicationController
+	rails generate rspec:swagger AppliedjobsController
+	rails generate rspec:swagger EligiblejobsController
+	rails generate rspec:swagger LoginController
+	rails generate rspec:swagger LogoutController
+	rails generate rspec:swagger ProfileController
+	rails generate rspec:swagger SkillsController
+	rails generate rspec:swagger UseraccountController
+	rails generate rspec:swagger MyapplicationsController
+  ### in /spec/swagger_helper.rb line 27 inorder to get http as default in swagger page
+		remove https -> http
+  ### rails rswag:specs:swaggerize
+
 
 ## Inorder to run the rails application
 give the below command from terminal-
