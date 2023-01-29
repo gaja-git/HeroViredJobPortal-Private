@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom";
-import './createacc.css'
+// import './createacc.css'
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -60,5 +60,5 @@ export default function CreateAccount() {
 
     </div>
 
-      )
+  )
 }

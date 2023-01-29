@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './login.css'
 
 import axios from 'axios';
@@ -8,8 +8,8 @@ import axios from 'axios';
 const Login = () => {
     let [ldata, setLdata] = useState({});
     const navigate = useNavigate();
-    
-    function handleLogin(e){
+
+    function handleLogin(e) {
         setLdata({
             ...ldata,
             [e.target.name]: e.target.value
@@ -17,13 +17,13 @@ const Login = () => {
     }
     console.log("ldata", ldata);
 
-    async function sendLogin(){
+    async function sendLogin() {
 
         console.log(ldata);
         let res = await axios.post("/login", ldata)
         console.log(res, "res");
         // if (res.data)
-            navigate('/jobcanvas');
+        navigate('/jobcanvas');
 
     }
     function create_v() {
@@ -38,11 +38,11 @@ const Login = () => {
                 <h1> Welcome to Hero Vired JobPortal!</h1>
 
             </div>
-            <div className = "container_v">
-                    <h2> Login details:</h2>
-         
-            <div className="login_details">
-                
+            <div className="container_v">
+                <h2> Login details:</h2>
+
+                <div className="login_details">
+
                     <br></br>
                     <br></br>
                     <label> E-mail ID: </label>
@@ -58,10 +58,10 @@ const Login = () => {
                 {/* <input type="submit" Create Account onClick={create_v}  /> */}
                 <button onClick={create_v}>Please Create Account </button>
 
-            
-             </div>   
-            
-            
+
+            </div>
+
+
 
         </div>
     );

@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from "react"
 import './content.css'
 import axios from "axios"
-function applied(){
-        let sidebar = document.querySelector(".app")
-        let childsidebar = sidebar.children;
-        for (let i=0; i<childsidebar.length;i++){
-            childsidebar[i].innerText = "Applied"
-            }
-}
+
 
 export default function Content() {
         let [jobData, setJobData] = useState([])
+
+        function applied() {
+                // let sidebar = document.querySelector(".app")
+                // let childsidebar = sidebar.children;
+                // for (let i = 0; i < childsidebar.length; i++) {
+                //         childsidebar[i].innerText = "Applied"
+                // }
+        }
+
         const jobs = [
                 {
                         jobtitle: "Lead Business Analyst",
@@ -54,16 +57,16 @@ export default function Content() {
                         setJobData(res.data)
                 }
                 fetchData()
-              
-                
+
+
         }, [])
         return (
                 <div className="dashBoard_job_content_container_gj">
                         {jobs.length ? (jobs.map((ele) => (<div className="dashBoard_job_content_gj">
                                 <div className="dashBoard_job_title_gj">
                                         <h3>{ele.jobtitle}</h3>
-                                        <div className ="app">
-                                        <button onClick={applied}>Apply</button>
+                                        <div className="app">
+                                                <button onClick={applied}>Apply</button>
                                         </div>
                                 </div>
 

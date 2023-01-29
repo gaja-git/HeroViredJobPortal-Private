@@ -27,7 +27,7 @@ const Profile = () => {
 
     }
     return (
-        <div className ="profile_v">
+        <div className="profile_v">
             <div className="plogo">
                 <img src="/images/HV1.png" alt="HV_logo" height='40px' width='200px' />
                 <h1> Welcome to Hero Vired JobPortal!</h1>
