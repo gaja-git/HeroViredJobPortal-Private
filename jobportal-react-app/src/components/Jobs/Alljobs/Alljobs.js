@@ -30,7 +30,11 @@ export default function Alljobs() {
                 {alljobData.length ? (alljobData.map((ele) => (<div className="alljobs_job_content_gj">
                     <div className="alljobs_job_title_gj">
                         <h3>{ele.jobtitle}</h3>
+                        <div className="app_all">
+
                         <button>Apply</button>
+                        </div>
+
                     </div>
 
                     <div className="alljobs_job_params_gj">

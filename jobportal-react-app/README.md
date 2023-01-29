@@ -1,3 +1,15 @@
+# WORK SPLIT:
+  * Login Page - Vidhya
+  * Create account - Gaja
+  * Profile page - Vidhya
+  * Middle Section and Content in Jobcanvas - Gaja
+  * Jobcanvas layout, Header and Searchbox - Vidhya
+  * All jobs & Eligible jobs - Gaja
+  * Applied jobs - Vidhya
+  * Shortlisted & Rejected - Gaja
+  * Interviewing & Offer received - Vidhya
+  * Logout - Vidhya
+  
 # Creating new react app 
  * npx create-react-app jobportal-react-app
 
@@ -12,16 +24,122 @@ This command will install files required for routing purpose.
 * npm install axios 
 This command will install axios required for fetching API data from backend.
 
-# WORK SPLIT:
-  * Login Page - Vidhya
-  * Create account - Gaja
-  * Profile page - Vidhya
-  * Middle Section and Content in Jobcanvas - Gaja
-  * Jobcanvas layout, Header and Searchbox - Vidhya
-  * All jobs & Eligible jobs - Gaja
-  * Applied jobs - Vidhya
-  * Shortlisted & Rejected - Gaja
-  * Interviewing & Offer received - Vidhya
+# Commands and instructions to create React compnents
+
+Remove unwanted files and images before starting like Reportwebvitals,setuptests and remove the respective paths from Index.js
+
+Make the following changes in below files
+* Index.js:
+	
+	* Import Router and its components
+ 
+        import { BrowserRouter as Router } from "react-router-dom";
+	* Wrap App component inside Router
+ 
+          <Router>
+            <App />
+          </Router>
+
+* App.js: 
+
+	 * import router
+  
+    import { Routes, Route } from "react-router-dom";
+
+	 * Import all components created
+  
+    import Createaccount from './components/Welcome/Createaccount';
+
+ 	* Calling routes inside return function
+  
+             <Routes>
+                <Route element={<Createaccount />} path="/createaccount" />
+                 <Route element={<Login />} path="/" />
+             </Routes>
+
+      Similarly all the components used to route are called here.
+
+* Images folder:
+
+	 * Images folder is created inside public to store all the images needed for project and called from this path.
+  
+                <img src="/images/HV1.png" alt="HV_logo" height='40px' width='200px' />
+
+* Creating components:
+
+	* Right click on src and create new folder - components
+Components is used to write JSX codes for our project work and then called in APP.js.
+	* Mutiple folders and files are created inside components with respect to our usage.
+
+* List of components created for Jobportal project:
+
+	* Welcome folder:
+		* Login.js and login.css for login page.
+		* Createaccount.js and createacc.css for creating a new account.
+		* Logout.js and logout.css for logging off page.
+	* Profile folder:
+		* Profile.js and profile.css for creating new profile
+	* Dashboard folder:
+		* Header folder: 
+		* Midsection folder:
+		* Searchbox folder:
+		* Content folder:
+		* Jobcanvas.js and jobcanvas.css -> contains page layout sections divided for all the above folders above. All the components are called within Jobcanvas.js
+	* Jobs folder:
+		* Alljobs folder:
+		* Appliedjobs folder:
+		* Eligiblejobs folder:
+	* Myapplications folder:
+		* Interviewing:
+		* Shortlisted
+		* Rejected
+		* Offerreceived
+  
+* When a link needs to be used:
+	*  Use this syntax
+ 
+      <Link to="/rejected">
+                Rejected
+       </Link>
+	* import { Link } from "react-router-dom"
+
+* useNavigate:
+	* import { useNavigate } from "react-router-dom";
+	* inside function
+ 
+		    const navigate = useNavigate();
+	            navigate('/jobcanvas');
+
+* Calling asynfunctions onClick:
+
+	       * <button onClick={create_v}>Please Create Account </button>
+ 
+ 	     * <input type="submit" className="login_submit" onClick={sendLogin} />
+
+	 * let [ldata, setLdata] = useState({});
+ 
+    const navigate = useNavigate();
+
+    function handleLogin(e) {
+    
+        setLdata({
+            ...ldata,
+            [e.target.name]: e.target.value
+                });
+          }
+         console.log("ldata", ldata);
+
+    async function sendLogin() {
+
+        console.log(ldata);
+        let res = await axios.post("/login", ldata)
+        console.log(res, "res");
+        navigate('/jobcanvas');
+    }
+    
+    function create_v() {
+    
+               navigate("/createaccount");}
 
 
 # Getting Started with Create React App

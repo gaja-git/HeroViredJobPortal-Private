@@ -28,7 +28,9 @@ export default function Eligiblejobs() {
                 {eligiblejobData.length ? (eligiblejobData.map((ele) => (<div className="eligiblejobs_job_content_gj">
                     <div className="eligiblejobs_job_title_gj">
                         <h3>{ele.jobtitle}</h3>
-                        <button>Apply</button>
+                        <div className="app_el">
+                         <button>Apply</button>
+                        </div>
                     </div>
 
                     <div className="eligiblejobs_job_params_gj">
