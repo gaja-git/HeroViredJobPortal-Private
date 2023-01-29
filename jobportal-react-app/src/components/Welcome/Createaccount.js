@@ -28,7 +28,7 @@ export default function CreateAccount() {
       let res = await axios.post("/useraccount", createAccData);
       console.log("res", res)
       console.log("user creation after")
-      console.log("Navigate to login");
+      console.log("Navigate to profile");
 
       // alert("User account is created successfully ! Please login now.")
       navigate("/profile");
@@ -54,7 +54,7 @@ export default function CreateAccount() {
           <input type="text" name="email" onChange={handleChange} /><br></br>
           <label> Enter your password </label><br></br>
           <input type="password" name="password" onChange={handleChange} /><br></br>
-          <input type="Submit" className="acc_submit" value="submit" onClick={sendData} />
+          <input type="Submit" className="acc_submit" value="Submit" onClick={sendData} />
         </div>
       </div>
 

@@ -26,8 +26,8 @@ const Login = () => {
         navigate('/jobcanvas');
 
     }
-    async function create_v() {
-        navigate("/createaccount");
+    function create_v() {
+               navigate("/createaccount");
 
     }
     return (
@@ -48,7 +48,7 @@ const Login = () => {
                     <label> E-mail ID: </label>
                     <input type="text" id="email" placeholder='email' name='email' onChange={handleLogin} /><br></br>
                     <label> Password: </label>
-                    <input type="text" id="pass" placeholder='password' name='password' onChange={handleLogin} /><br></br>
+                    <input type="password" id="pass" placeholder='password' name='password' onChange={handleLogin} /><br></br>
                     <input type="submit" className="login_submit" onClick={sendLogin} />
                 </div>
 

@@ -1,10 +1,9 @@
 # Creating Rails app:
 rails new jobportal-rails-app -d postgresql
 # Configuring the below fields in database.yml for development and test: 
-  * database: 
-  * username: 
-  *  password: 
-  * host: 
+  * username: <your database user name>
+  * password: <your database password>
+  * host: localhost
   * port: 5432
 
 To resolve the "missing gemfiles error " 
@@ -32,7 +31,7 @@ This will resolve the dependency error while executing in different systems
  * useraccount - Vidhya
  * skills - Gaja
  * jobdetails - Gaja
- * profile - Vidhya 
+ * profile - Vidhya  
  * candidateapplication - Gaja 
  
  ## The following controllers are created 
@@ -45,19 +44,174 @@ This will resolve the dependency error while executing in different systems
  * eligiblejobs -Gaja
  * appliedjobs -Gaja
  
-## For authentication we need bcrypt
-* Uncomment line 37 in gem file
-* bundle install
-* require 'bcrypt' -> used to import bcrypt in required files
+### Details Rails project creation overview:
+# Create Jobportal application landing routes:
+	1. Go to config/routes.rb
+		root "application#index"
+	2. Go to app/controllers/application_controller.rb
+		Add a function as below
+			def index
+				 render html: "JobPortal-Rails Application"
+			end
+			
+# Create Table using migration
+* rails generate migration create_skills
+    added: t.string :skillName
+    ran rails db:migrate
+* rails generate migration create_jobdetails
+    t.string :jobDescription
+    t.string :companyName      
+    t.string :location
+    t.string :jobType
+    t.bigint :salary      
+    t.date :postedDate
+    t.string :domain
+    t.string :jobCode      
+    t.string :skillsRequired
+    t.string :applicationStatus
+    ran rails db:migrate
+* rails generate migration create_candidateapplication
+add  t.integer :jobid
+      t.integer :userid
+      t.string :jobcode
+      t.date :applieddate      
+      t.string :candidateapplicationstatus
+      t.string :location
+      t.date :posteddate
+rails db:migrate
 
-## To connect to postgresql
-* psql -U postgresql in command prompt
-* Enter password:
-* create database name;
-* \c name -> will connect to our new database
-* \dt -> to view tables after migration
-* select * from tablename; -> display table with column names and values.
+* rails generate migration create_useraccounts
+add   t.string :email
+      t.string :password_digest
+      t.string :usertype
+rails db:migrate
+* rails generate migration create_profiles
+add  t.string :firstname
+      t.string :lastname
+      t.string :email
+      t.string :contact
+      t.string :address
+      t.string :about
+      t.string :profilepic
+      t.string :currentcompany
+      t.bigint :ctc
+      t.bigint :experience
+      t.string :currentrole
+      t.string :skills
+      t.string :resumelink
+      t.bigint :expectedsalary
+      t.string :preferredlocation
 
+rails db:migrate
+
+* to add missing column
+rails generate migration jobdetails_missingtitle
+
+* Inside the new file db/migrate/<timestamp>property_missingcontent
+ add the following  to add the columns
+	add_column :jobdetails, :jobtitle, :string
+
+after this give 
+rails db:migrate
+
+
+# Creating the controllers
+* rails generate controller jobdetails
+	create jobdetail.rb model file
+	inside /config/routes.rb
+	resources :jobdetails
+
+* rails generate controller candidateapplication
+create candidateapplication.rb model file
+in /config/routes.rb
+resources :candidateapplication
+
+* rails generate controller appliedjobs
+	in /config/routes.rb
+resources :candidateapplication
+* rails generate controller eligiblejobs
+in /config/routes.rb
+resources :candidateapplication
+	
+* rails generate controller login
+	create login.rb model file
+	in /config/routes.rb
+resources :login
+
+* rails generate controller logout
+	create logout.rb model file
+	in /config/routes.rb
+resources :logout
+
+* rails generate controller profile
+	create profile.rb model file
+	in /config/routes.rb
+resources :profile
+
+* rails generate controller skills
+	create skills.rb model file
+	in /config/routes.rb
+resources :skills
+
+* rails generate controller useraccount
+	create useraccount.rb model file
+	in /config/routes.rb
+resources :useraccount
+
+* Add the required CRUD operations in each of the controller
+ 
+## For authentication:useraccount with hash password we use Bcrypt 
+* For Bcyrpt 
+	in Gemfile - "gem "bcrypt", "~> 3.1.7""  => uncomment line number 37
+	run bundle install
+
+	/app/controllers/login_controller.rb
+	add require 'bcrypt'
+
+* inside the post operation use the authenticate  function for password and
+
+	uval.authenticate(params[:password]))
+
+* set the session  
+
+	session[:current_user_id] = uval.id
+
+* /app/model/useraccount.rb
+	add "has_secure_password"
+
+* For authorization in each operation need use
+ 	current_user = Useraccount.find_by_id(session[:current_user_id])
+        if(current_user.nil?)
+		{//required code
+		}
+
+## For Database:We use postgresql, the AWS database provided by tutor
+* connect using : psql -h rubydb.c733iovakuat.us-east-1.rds.amazonaws.com -U postgres
+password:<given password>
+* To create DB
+	create database jobportalg2;
+* To connect to db: \c jobportalg2
+* To view the tables created by user:\dt
+* To view all the tables including system created table :\z
+* To view the enteries on the table :
+	select * from <tablename>;
+	
+## To veiw the api through postman:	
+
+Provide the along with api and select the respective operation:
+ http://127.0.0.1:3001/login
+ 
+ If its post operation provide the input inside the Section below url
+ The output will be posted in bottom section
+
+Screen shots explaining the entire postman for the project is in the document PostmanScreenshot inside the rails project
+
+## Inorder to run the rails application
+give the below command from terminal-
+"rails s"
+The above command runs the app in 3000 port on localhost
+if you want to run in another port give
+"rails s -p 3001"
 
 
 

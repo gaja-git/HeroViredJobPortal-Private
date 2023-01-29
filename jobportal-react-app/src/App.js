@@ -11,6 +11,7 @@ import Rejected from './components/Myapplications/Rejected/Rejected';
 import Appliedjobs from './components/Jobs/Appliedjobs/Appliedjobs';
 import Interviewing from './components/Myapplications/Interviewing/Interviewing';
 import Offerreceived from './components/Myapplications/Offerreceived/Offerreceived';
+import Logout from './components/Welcome/Logout';
 
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
         <Route element={<Rejected />} path="/rejected" />
         <Route element={<Interviewing />} path="/interviewing" />
         <Route element={<Offerreceived />} path="/offerreceived" />
+        <Route element={<Logout />} path="/logout" />
+
       </Routes>
 
     </>

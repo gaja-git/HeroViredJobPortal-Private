@@ -12,23 +12,23 @@ class ProfileController < ApplicationController
         end
     end
     def show 
-        reg_user = Useraccount.find_by_id(session[:current_user_id])
-        if !reg_user.nil? 
+        # reg_user = Useraccount.find_by_id(session[:current_user_id])
+        # if !reg_user.nil? 
             v = Profile.find(params[:id]) 
             render json: v
-        else
-            render json: "Not authorised to see candidates info!" 
-        end
+        # else
+        #     render json: "Not authorised to see candidates info!" 
+        # end
     end 
     def create 
-        reg_user = Useraccount.find_by_id(session[:current_user_id])
-        if !reg_user.nil? 
+        # reg_user = Useraccount.find_by_id('email': params[:email])
+        # if !reg_user.nil? 
 
-            v = !params[:firstname].empty? and !params[:email].empty? and !params[:contact].nil? and !params[:address].nil? and 
-            !params[:profilepic].nil? and !params[:skills].nil? and !params[:resumelink].nil? and !params[:preferredlocation].nil?
+            # v = !params[:firstname].nil? and !params[:email].nil? and !params[:contact].nil? and !params[:address].nil? and 
+            # !params[:profilepic].nil? and !params[:skills].nil? and !params[:resumelink].nil? and !params[:preferredlocation].nil?
 
-            if (v)
-            p=Profile.create(
+            # if (v)
+             p=Profile.create(
                 'firstname': params[:firstname],
                 'lastname': params[:lastname],
                 'email': params[:email],
@@ -48,10 +48,9 @@ class ProfileController < ApplicationController
             )
             puts p
             render json: "Candidate Profile created!" 
-            end
-        else
-            render json: "Not authorised to create new profile!" 
-        end
+        #   else
+        #     render json: "New profile not created!" 
+        # end
     end
     def update 
         reg_user = Useraccount.find_by_id(session[:current_user_id])
