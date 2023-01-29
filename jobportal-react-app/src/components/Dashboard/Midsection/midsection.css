@@ -9,7 +9,6 @@ display: flex;
 flex-direction: column;
 /* background-color: purple; */
 margin-left: 10%;
-
 background-color: #EFF6FF;
 
 }
@@ -64,13 +63,13 @@ background: #EFF6FF;
     height:15%;
     width: 20%;
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 20px;
     
     /* Roboto 24 Medium 500 */
     
     font-family: 'Roboto';
     font-style: normal;
-    font-size: medium;
+    font-size: large;
     color: #333333;
     background: #EFF6FF;
        

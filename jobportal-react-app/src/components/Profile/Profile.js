@@ -37,7 +37,7 @@ const Profile = () => {
                 <super>*</super>
                 <label for="firstName"> First Name: </label>
                 <input type="text" id="firstName" placeholder='firstName' name='firstName' onChange={handleProfile} /><br></br>
-                {/* <super> </super> */}
+                <super className="not_v"> </super>
                 <label for="lastName"> Last Name: </label>
                 <input type="text" id="lastName" placeholder='lastName' name='lastName' onChange={handleProfile} /><br></br>
                 <super>*</super>
@@ -49,22 +49,22 @@ const Profile = () => {
                 <super>*</super>
                 <label for="address"> Address: </label>
                 <input type="textarea" id="address" placeholder='address' name='address' onChange={handleProfile} /><br></br>
-                <super> </super>
+                <super className="not_v"> </super>
                 <label for="about"> About: </label>
                 <input type="text" id="about" placeholder='About' name='about' onChange={handleProfile} /><br></br>
                 <super>*</super>
                 <label for="pic"> Profile pic: </label>
                 <input type="text" id="pic" placeholder='Profile pic' name='profilePic' onChange={handleProfile} /><br></br>
-                <super> </super>
+                <super className="not_v"> </super>
                 <label for="company"> Current Company: </label>
                 <input type="text" id="company" placeholder='Company' name='currentCompany' onChange={handleProfile} /><br></br>
-                <super> </super>
+                <super className="not_v"> </super>
                 <label for="ctc"> Current CTC: </label>
                 <input type="number" id="ctc" placeholder='CTC' name='ctc' onChange={handleProfile} /><br></br>
-                <super> </super>
+                <super className="not_v"> </super>
                 <label for="experience"> Experience: </label>
                 <input type="number" id="experience" placeholder='experience' name='experience' onChange={handleProfile} /><br></br>
-                <super> </super>
+                <super className="not_v"> </super>
                 <label for="role">Current Role: </label>
                 <input type="text" id="role" placeholder='Role' name='currentRole' onChange={handleProfile} /><br></br>
                 <super>*</super>
@@ -73,7 +73,7 @@ const Profile = () => {
                 <super>*</super>
                 <label for="cv"> Upload CV: </label>
                 <input type="text" id="cv" placeholder='Upload CV' name='resumeLink' onChange={handleProfile} /><br></br>
-                <super> </super>
+                <super className="not_v"> </super>
                 <label for="expectedSalary"> Expected Salary: </label>
                 <input type="text" id="expectedSalary" placeholder='expectedSalary' name='expectedSalary' onChange={handleProfile} /><br></br>
                 <super>*</super>

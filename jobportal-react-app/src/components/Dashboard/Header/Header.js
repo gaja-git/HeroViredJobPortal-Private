@@ -33,9 +33,9 @@ export default function Header() {
                                 </div>
                         </div>
                         <div className="h_section2">
-                                <div onClick={dash_v}>                                      
+                                <div onClick={dash_v}> 
+                                  {/* <img src="/images/Union.png"  alt="back_logo" height='145px' width='85px' /> */}
                                         Dashboard
-                                     
                                 </div>
                                 <div onClick={profile_v}>Application Profile</div>
                                 <div onClick={appl_v}>Applied Jobs</div>

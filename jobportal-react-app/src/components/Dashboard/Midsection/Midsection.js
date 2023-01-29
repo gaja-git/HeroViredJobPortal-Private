@@ -69,7 +69,8 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                                <img src="/images/allJobs.png" alt="HV_logo" height='40px' width='40px' />
+                            <img src="/images/Iconbg.png"  alt="back_logo" height='45px' width='45px' />
+                            <img className = "icon_v" src="/images/allJobs.png" alt="HV_logo" height='30px' width='30px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -80,9 +81,10 @@ export default function Midsection() {
                                 <div className="all_job_text2_gj">
                                     {midalljobData.length}
                                 </div>
-                                {/* <div className="all_jobs_right_arrow">
-                                <button></button>
-                                </div> */}
+                              
+                            </div>
+                            <div className="all_jobs_right_arrow">
+                                <img src="/images/arrow.png" alt="arrow_logo" height='20px' width='20px' />
                             </div>
 
 
@@ -115,7 +117,8 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                                <img src="/images/appliedJobs.png" alt="HV_logo" height='40px' width='40px' />
+                            <img src="/images/Iconbg.png"  alt="back_logo" height='45px' width='45px' />
+                            <img className = "icon_v" src="/images/appliedJobs.png" alt="HV_logo" height='30px' width='30px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -127,20 +130,22 @@ export default function Midsection() {
                                     {midAppliedjobData.length}
                                 </div>
                             </div>
-                            {/* <div className="all_jobs_right_arrow">
-                            </div> */}
-
+                            <div className="all_jobs_right_arrow">
+                            <img src="/images/arrow.png" alt="arrow_logo" height='20px' width='20px' />
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
             <div className="myapp_outside_boundary_gj">
-                <h5 className="myapp_gj"> My Application</h5>
+                <h4 className="myapp_gj"> My Application</h4>
                 <div className="myapp_inner_item_boundary_gj">
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                                <img src="/images/shortlisted.png" alt="HV_logo" height='40px' width='40px' />
+                             <img src="/images/Iconbg.png"  alt="back_logo" height='45px' width='45px' />
+                             <img className = "icon_v" src="/images/shortlisted.png" alt="HV_logo" height='30px' width='30px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -152,13 +157,17 @@ export default function Midsection() {
                                     100
                                 </div>
                             </div>
+                            <div className="all_jobs_right_arrow">
+                            <img src="/images/arrow.png" alt="arrow_logo" height='20px' width='20px' />
+                            </div>
                         </div>
                     </div>
 
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                                <img src="/images/interview.png" alt="HV_logo" height='40px' width='40px' />
+                            <img src="/images/Iconbg.png"  alt="back_logo" height='45px' width='45px' />
+                            <img className = "icon_v" src="/images/interview.png" alt="HV_logo" height='30px' width='30px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -170,12 +179,16 @@ export default function Midsection() {
                                     35
                                 </div>
                             </div>
+                            <div className="all_jobs_right_arrow">
+                            <img src="/images/arrow.png" alt="arrow_logo" height='20px' width='20px' />
+                            </div>
                         </div>
                     </div>
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                                <img src="/images/shortlisted.png" alt="HV_logo" height='40px' width='40px' />
+                            <img src="/images/Iconbg.png"  alt="back_logo" height='45px' width='45px' />
+                            <img className = "icon_v" src="/images/reject.png" alt="HV_logo" height='30px' width='30px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -187,13 +200,17 @@ export default function Midsection() {
                                     100
                                 </div>
                             </div>
+                            <div className="all_jobs_right_arrow">
+                            <img src="/images/arrow.png" alt="arrow_logo" height='20px' width='20px' />
+                            </div>
                         </div>
                     </div>
 
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                                <img src="/images/offer.png" alt="HV_logo" height='40px' width='40px' />
+                            <img src="/images/Iconbg.png"  alt="back_logo" height='45px' width='45px' />
+                            <img className = "icon_v" src="/images/offer.png" alt="HV_logo" height='30px' width='30px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -204,6 +221,9 @@ export default function Midsection() {
                                 <div className="all_job_text2_gj">
                                     30
                                 </div>
+                            </div>
+                            <div className="all_jobs_right_arrow">
+                            <img src="/images/arrow.png" alt="arrow_logo" height='20px' width='20px' />
                             </div>
                         </div>
                     </div>
