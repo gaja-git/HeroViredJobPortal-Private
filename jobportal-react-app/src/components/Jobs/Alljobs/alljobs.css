@@ -25,11 +25,11 @@
 
 
 .alljobs_job_content_container_gj{
-    width:100%;
+    width:98%;
     /* height:80%; */
     
     align-items: center;
-    /* padding-left: 35px; */
+    margin-left: 35px;
     /* border: solid black; */
    justify-content: center;
   
@@ -42,10 +42,10 @@
 }
 .alljobs_job_content_gj{
     width:95%;
-    /* height: 35%; */
+    height: 38%;
     /* display: flex; */
     /* background-color: green; */
-    /* background: white; */
+    background: white;
     
     border-radius: 10px;
     margin-top:10px;
@@ -56,7 +56,7 @@
 
 .alljobs_job_title_gj{
     width:100%;
-    /* height: 30%; */
+    height: 30%;
     display: flex;
     flex-direction: row;
     /* background-color: blue; */
@@ -76,36 +76,37 @@ color: #006FCB;
 /* background-color: red; */
 }
 .alljobs_job_title_gj>h3{
-    width:100%;
+    width:88%;
     /* background-color: red; */
-margin-left: 20px;
+   margin-left: 20px;
 }
-.alljobs_job_title_gj>button{
+.alljobs_job_title_gj>.app_all>button{
     /* align-self:right; */
     /* margin-right: 0px; */
     background: #FFFFFF;
     border: 1px solid #006FCB;
    border-radius: 10px;
-   /* margin-right: -100px; */
-   margin-right: 3%;
+   margin-right: -10%;
+   margin-top: 15px;
   
    
 }
 
 .alljobs_job_params_gj{
     width:60%;
-    /* height: 5%; */
+    height: 5%;
     display: flex;
     flex-direction: row;
     font-size:smaller;
     
      justify-content:left ; 
      margin-left: 20px;
-     margin-top: 15px;
+     margin-top: 8px;
   
 }
 
-.alljobs_job_location_gj{
+.alljobs_job_location_gj>span>i{
+    margin-right: 10px;
 
 }
 
@@ -113,19 +114,28 @@ margin-left: 20px;
     margin-left: 30px;
 
 }
+.alljobs_job_type_gj>span>i{
+    margin-right: 10px;
+
+}
 
 .alljobs_job_cost_gj{
     margin-left: 30px;
+}
+.alljobs_job_cost_gj>span>i{
+    margin-right: 10px;
 }
 
 .alljobs_job_comp_gj{
     margin-left: 30px;
 }
-
+.alljobs_job_comp_gj>span>i{
+    margin-right: 10px;
+}
 .alljobs_job_details_gj{
     width:80%;
-    /* height: 100%; */
+    height: 100%;
     margin-left: 20px;
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: smaller;
 }

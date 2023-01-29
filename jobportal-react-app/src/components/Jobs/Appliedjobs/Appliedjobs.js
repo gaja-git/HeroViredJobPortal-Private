@@ -25,12 +25,16 @@ export default function Appliedjobs() {
         <div className="appliedjobs_v">
             <Header />
             <h4>Applied Jobs</h4>
+            <h6> Back to search results </h6>
             <Searchbox></Searchbox>
             <div className="appliedjobs_job_content_container_gj">
                 {appliedjobData.length ? (appliedjobData.map((ele) => (<div className="appliedjobs_job_content_gj">
                     <div className="appliedjobs_job_title_gj">
                         <h3>{ele.jobtitle}</h3>
+                        <div className="app_app">
+
                         <button>Apply</button>
+                        </div>
                     </div>
 
                     <div className="appliedjobs_job_params_gj">
