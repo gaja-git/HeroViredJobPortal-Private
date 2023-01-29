@@ -8,7 +8,7 @@ import './shortlisted.css'
 export default function Shortlisted() {
 
     let [shortlistedJobData, setShortlistedJobData] = useState([])
-    let [shortlisted, setshortlisted] = useState(false)
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -21,8 +21,9 @@ export default function Shortlisted() {
 
     let filterData = shortlistedJobData.filter(
         (ele) =>
-            ele.candidateapplicationstatus === "Shortlisted"
+            ele.candidateapplicationstatus === "shortlisted"
     );
+
     return (
         <div className="shortlisted">
             <Header />
@@ -39,13 +40,11 @@ export default function Shortlisted() {
                 {filterData.length ? (filterData.map((ele) =>
                 (
                     < tbody >
-
-                        <tr><td className="job_code_gj">JPC-2</td>
-                            <td>ele.jobcode</td>
-                            <td>Product Manager</td>
-                            <td>ele.location</td>
-                            <td>ele.applieddate</td>
-                            <td>ele.posteddate</td>
+                        <tr><td className="job_code_gj">{ele.jobcode}</td>
+                            <td>{ele.jobtitle}</td>
+                            <td>{ele.location}</td>
+                            <td>{ele.applieddate}</td>
+                            <td>{ele.posteddate}</td>
                             <td className="job_status_gj">Shortlisted</td>
                         </tr>
                     </tbody>

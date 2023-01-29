@@ -5,8 +5,13 @@ import axios from "axios"
 
 export default function Midsection() {
     let [midalljobData, setMidAllJobData] = useState([])
-    let [midelegiblejobData, setMidEligibleAllJobData] = useState([])
+    let [mideligiblejobData, setMidEligibleAllJobData] = useState([])
     let [midAppliedjobData, setMidAppliedAllJobData] = useState([])
+    let [midMyApplicationjobData, setMidMyApplicationJobData] = useState([])
+    let [midShortlistedjobData, setMidShortlistedJobData] = useState([])
+    let [midRejectedjobData, setMidRejectedJobData] = useState([])
+    let [midInterviewingjobData, setMidInterviewingJobData] = useState([])
+    let [midOfferRecievedjobData, setMidOfferRecievedJobData] = useState([])
 
 
 
@@ -20,12 +25,43 @@ export default function Midsection() {
             let res2 = await axios.get("/eligiblejobs")
             console.log("res-eligiblejobs", res2.data)
             setMidEligibleAllJobData(res2.data)
-            console.log(midelegiblejobData.length)
+            console.log(mideligiblejobData.length)
 
 
             let res3 = await axios.get("/appliedjobs")
             console.log("res-appliedjobs", res3.data)
             setMidAppliedAllJobData(res3.data)
+
+
+            let res = await axios.get("/myapplications")
+            console.log("res", res.data)
+            setMidMyApplicationJobData(res.data)
+
+            let sfilterData = midMyApplicationjobData.filter(
+                (ele) =>
+                    ele.candidateapplicationstatus === "shortlisted"
+            );
+            console.log("sfilterData", sfilterData)
+            setMidShortlistedJobData(sfilterData)
+
+            let ifilterData = midMyApplicationjobData.filter(
+                (ele) =>
+                    ele.candidateapplicationstatus === "Interviewing"
+            );
+            setMidInterviewingJobData(ifilterData)
+
+            let rfilterData = midMyApplicationjobData.filter(
+                (ele) =>
+                    ele.candidateapplicationstatus === "Rejected"
+            );
+            setMidRejectedJobData(rfilterData)
+
+            let ofilterData = midMyApplicationjobData.filter(
+                (ele) =>
+                    ele.candidateapplicationstatus === "OfferRecieved"
+            );
+            setMidOfferRecievedJobData(ofilterData)
+
 
 
         }
@@ -74,7 +110,7 @@ export default function Midsection() {
                                     Eligible Jobs
                                 </div >
                                 <div className="all_job_text2_gj">
-                                    {midelegiblejobData.length}
+                                    {mideligiblejobData.length}
                                 </div>
                             </div>
                             <div className="all_jobs_right_arrow">
@@ -125,7 +161,7 @@ export default function Midsection() {
                                     Shortlisted
                                 </div >
                                 <div className="all_job_text2_gj">
-                                    9
+                                    {midShortlistedjobData.length}
                                 </div>
                             </div>
                             <div className="all_jobs_right_arrow">
@@ -149,7 +185,7 @@ export default function Midsection() {
 
                                 </div >
                                 <div className="all_job_text2_gj">
-                                    7
+                                    {midInterviewingjobData.length}
                                 </div>
                             </div>
                             <div className="all_jobs_right_arrow">
@@ -170,7 +206,7 @@ export default function Midsection() {
                                     Rejected
                                 </div >
                                 <div className="all_job_text2_gj">
-                                    5
+                                    {midRejectedjobData.length}
                                 </div>
                             </div>
                             <div className="all_jobs_right_arrow">
@@ -192,7 +228,7 @@ export default function Midsection() {
                                     OfferReceived
                                 </div >
                                 <div className="all_job_text2_gj">
-                                    3
+                                    {midOfferRecievedjobData.length}
                                 </div>
                             </div>
                             <div className="all_jobs_right_arrow">
