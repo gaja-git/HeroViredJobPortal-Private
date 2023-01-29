@@ -60,7 +60,7 @@ export default function Midsection() {
         <div className="midsection_gj">
 
             <div className="snapshot_outside_boundary_gj">
-                <h5 className="snapshot_gj">Snapshots</h5>
+                <h4 className="snapshot_gj">Snapshots</h4>
                 <div className="snapshot_inner_item_boundary_gj">
 
                     <div className="all_job_section_gj">
@@ -88,7 +88,8 @@ export default function Midsection() {
                     <div className="all_job_section_gj">
                         <div className="all_job_inner_frame_gj">
                             <div className="all_job_icon_frame_gj">
-                            <img src="/images/eJobs.png" alt="HV_logo" height='40px' width='40px' />
+                            <img src="/images/Iconbg.png"  alt="HV_logo" height='45px' width='45px' />
+                            <img className = "icon_v" src="/images/eJobs.png" alt="HV_logo" height='30px' width='30px' />
                             </div>
                             <div className="all_job_text_display_gj">
                                 <div className="all_job_text1_gj">
@@ -101,8 +102,10 @@ export default function Midsection() {
                                     100
                                 </div>
                             </div>
-                            {/* <div className="all_jobs_right_arrow">
-                            </div> */}
+                            <div className="all_jobs_right_arrow">
+                                <img src="/images/arrow.png" alt="arrow_logo" height='20px' width='20px' />
+
+                            </div>
 
                         </div>
                     </div>

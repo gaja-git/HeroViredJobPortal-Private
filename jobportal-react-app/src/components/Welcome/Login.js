@@ -20,13 +20,13 @@ const Login = () => {
     async function sendLogin(){
 
         console.log(ldata);
-        let res = await axios.post("http://127.0.0.1:3001/login", ldata)
+        let res = await axios.post("/login", ldata)
         console.log(res, "res");
         // if (res.data)
             navigate('/jobcanvas');
 
     }
-    async function create_v() {
+    function create_v() {
                navigate("/createaccount");
 
     }
@@ -48,7 +48,7 @@ const Login = () => {
                     <label> E-mail ID: </label>
                     <input type="text" id="email" placeholder='email' name='email' onChange={handleLogin} /><br></br>
                     <label> Password: </label>
-                    <input type="text" id="pass" placeholder='password' name='password' onChange={handleLogin} /><br></br>
+                    <input type="password" id="pass" placeholder='password' name='password' onChange={handleLogin} /><br></br>
                     <input type="submit" className="login_submit" onClick={sendLogin} />
                 </div>
 

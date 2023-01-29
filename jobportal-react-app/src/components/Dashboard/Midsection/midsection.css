@@ -10,7 +10,7 @@ flex-direction: column;
 /* background-color: purple; */
 margin-left: 10%;
 
-background: #EFF6FF;
+background-color: #EFF6FF;
 
 }
 
@@ -45,14 +45,14 @@ background: #EFF6FF;
 height:15%;
 width: 20%;
 padding: 3px;
-margin-left: 10px;
+margin-left: 20px;
 /* margin-top: 15px;
 margin-left: 15px; */
 /* Roboto 24 Medium 500 */
 
 font-family: 'Roboto';
 font-style: normal;
-font-size: medium;
+font-size: large;
 color: #333333;
 background: #EFF6FF;
 /* background-color: red; */
@@ -137,6 +137,8 @@ align-items: center;
 justify-content: center;
 font-size:36px;
 color:#006FCB;
+display: flex;
+margin-left:-10px;
 }
 /* .all_job_icon_ecllipse{
 position: absolute;
@@ -159,13 +161,16 @@ bottom: -16.56%;
 background: #006FCB;
 transform: matrix(1, 0, 0, -1, 0, 0);
 } */
-
-.all_jobs_right_arrow_gj{
-    position: absolute;
-width: 28.5px;
-height: 28.5px;
-left: 224px;
-top: 20.25px;
+.all_job_icon_frame_gj>.icon_v{
+    padding:0%;
+    margin:0%;
+    margin-top:0%;
+    /* background-color: red; */
+    margin-left:-38px;
+}
+.all_job_inner_frame_gj>.all_jobs_right_arrow{
+margin-left:25px;
+margin-top:10px;
 }
 
 .all_job_text_display_gj{
