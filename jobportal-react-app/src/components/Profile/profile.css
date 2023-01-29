@@ -36,17 +36,23 @@
     background-color: white;
     border: 1px solid black;
     width: 40%;
-    /* height: 50%; */
+    height: 90%;
     margin-left: 30%;
     border-radius: 15px;
-    margin-top: 0.7%;
+    margin-top: .7%;
     justify-content: center;
     align-items: center;
+}
+.profile_v>.formes>.not_v{
+    color:red;
+    margin:2px;
+    padding:2px;
+    margin-left:13%;
 }
 .profile_v>.formes>label{
     /* height:20px; */
    width :200px;
-   /* padding: 2px; */
+   padding: 2px;
    /* margin-left:13%; */
    /* margin-bottom: 6px; */
    margin-top:5px;
@@ -77,8 +83,9 @@
     color:black;
     cursor: pointer;
     border: 0px solid black;
-    margin-left:280px;
+    margin-left:285px;
     font-size:larger;
+    margin-top:2px;
 
 }
 .profile_v>.formes>.profile_submit:hover{

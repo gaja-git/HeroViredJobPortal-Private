@@ -7,12 +7,20 @@
     background-color:#EFF6FF;
 
 }
+.logout_v>.logo_v {
+    height:7%;
+    width: 100%;
+    /* margin:0%; */
+    background:#006FCB;
+    color:white;
+    display:flex;
+}
 .logout_v>h1{
     width:100%;
     height:10%;
     color:#006FCB;
     text-align: center;
-    padding:230px;
+    padding:150px;
     font-size:80px;
 }
 
