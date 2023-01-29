@@ -1,0 +1,533 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/appliedjobs":
+    get:
+      summary: list appliedjobs
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create appliedjob
+      responses:
+        '200':
+          description: successful
+  "/appliedjobs/new":
+    get:
+      summary: new appliedjob
+      responses:
+        '200':
+          description: successful
+  "/appliedjobs/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit appliedjob
+      responses:
+        '200':
+          description: successful
+  "/appliedjobs/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show appliedjob
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update appliedjob
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update appliedjob
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete appliedjob
+      responses:
+        '200':
+          description: successful
+  "/candidateapplication":
+    get:
+      summary: list candidateapplications
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create candidateapplication
+      responses:
+        '200':
+          description: successful
+  "/candidateapplication/new":
+    get:
+      summary: new candidateapplication
+      responses:
+        '200':
+          description: successful
+  "/candidateapplication/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit candidateapplication
+      responses:
+        '200':
+          description: successful
+  "/candidateapplication/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show candidateapplication
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update candidateapplication
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update candidateapplication
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete candidateapplication
+      responses:
+        '200':
+          description: successful
+  "/eligiblejobs":
+    get:
+      summary: list eligiblejobs
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create eligiblejob
+      responses:
+        '200':
+          description: successful
+  "/eligiblejobs/new":
+    get:
+      summary: new eligiblejob
+      responses:
+        '200':
+          description: successful
+  "/eligiblejobs/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit eligiblejob
+      responses:
+        '200':
+          description: successful
+  "/eligiblejobs/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show eligiblejob
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update eligiblejob
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update eligiblejob
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete eligiblejob
+      responses:
+        '200':
+          description: successful
+  "/jobdetails":
+    get:
+      summary: list jobdetails
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create jobdetail
+      responses:
+        '200':
+          description: successful
+  "/jobdetails/new":
+    get:
+      summary: new jobdetail
+      responses:
+        '200':
+          description: successful
+  "/jobdetails/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit jobdetail
+      responses:
+        '200':
+          description: successful
+  "/jobdetails/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show jobdetail
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update jobdetail
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update jobdetail
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete jobdetail
+      responses:
+        '200':
+          description: successful
+  "/login":
+    get:
+      summary: list logins
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create login
+      responses:
+        '200':
+          description: successful
+  "/login/new":
+    get:
+      summary: new login
+      responses:
+        '200':
+          description: successful
+  "/login/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit login
+      responses:
+        '200':
+          description: successful
+  "/login/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show login
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update login
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update login
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete login
+      responses:
+        '200':
+          description: successful
+  "/logout":
+    get:
+      summary: list logouts
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create logout
+      responses:
+        '200':
+          description: successful
+  "/logout/new":
+    get:
+      summary: new logout
+      responses:
+        '200':
+          description: successful
+  "/logout/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit logout
+      responses:
+        '200':
+          description: successful
+  "/logout/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show logout
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update logout
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update logout
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete logout
+      responses:
+        '200':
+          description: successful
+  "/myapplications":
+    get:
+      summary: list myapplications
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create myapplication
+      responses:
+        '200':
+          description: successful
+  "/myapplications/new":
+    get:
+      summary: new myapplication
+      responses:
+        '200':
+          description: successful
+  "/myapplications/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit myapplication
+      responses:
+        '200':
+          description: successful
+  "/myapplications/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show myapplication
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update myapplication
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update myapplication
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete myapplication
+      responses:
+        '200':
+          description: successful
+  "/profile":
+    get:
+      summary: list profiles
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create profile
+      responses:
+        '200':
+          description: successful
+  "/profile/new":
+    get:
+      summary: new profile
+      responses:
+        '200':
+          description: successful
+  "/profile/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit profile
+      responses:
+        '200':
+          description: successful
+  "/profile/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show profile
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update profile
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update profile
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete profile
+      responses:
+        '200':
+          description: successful
+  "/useraccount":
+    get:
+      summary: list useraccounts
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create useraccount
+      responses:
+        '200':
+          description: successful
+  "/useraccount/new":
+    get:
+      summary: new useraccount
+      responses:
+        '200':
+          description: successful
+  "/useraccount/{id}/edit":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: edit useraccount
+      responses:
+        '200':
+          description: successful
+  "/useraccount/{id}":
+    parameters:
+    - name: id
+      in: path
+      description: id
+      required: true
+      schema:
+        type: string
+    get:
+      summary: show useraccount
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update useraccount
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update useraccount
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete useraccount
+      responses:
+        '200':
+          description: successful
+servers:
+- url: http://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com

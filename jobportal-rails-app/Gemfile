@@ -72,3 +72,9 @@ group :test do
 end
 
 #gem "rack-cors"
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+  gem "rswag-specs"
+end
+gem 'rswag'
