@@ -21,15 +21,14 @@ class ProfileController < ApplicationController
         # end
     end 
     def create 
-        # reg_user = Useraccount.find_by_id('email': params[:email])
-        # if !reg_user.nil? 
+        reg_user = Useraccount.find_by('email': params[:email])
+        if !reg_user.nil? 
 
             # v = !params[:firstname].nil? and !params[:email].nil? and !params[:contact].nil? and !params[:address].nil? and 
             # !params[:profilepic].nil? and !params[:skills].nil? and !params[:resumelink].nil? and !params[:preferredlocation].nil?
 
             # if (v)
-             p=Profile.create(
-                'firstname': params[:firstname],
+             p=Profile.create('firstname': params[:firstname],
                 'lastname': params[:lastname],
                 'email': params[:email],
                 'contact': params[:contact],
@@ -44,12 +43,12 @@ class ProfileController < ApplicationController
                 'resumelink': params[:resumelink],
                 'expectedsalary': params[:expectedsalary],
                 'preferredlocation': params[:preferredlocation]
-
             )
             puts p
             render json: "Candidate Profile created!" 
-        #   else
-        #     render json: "New profile not created!" 
+        else
+            render json: "New profile not created!" 
+          end
         # end
     end
     def update 
