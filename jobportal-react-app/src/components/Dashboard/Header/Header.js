@@ -19,7 +19,7 @@ export default function Header() {
      }
      async function logout_v(){
 
-        let res = await axios.post("http://127.0.0.1:3001/logout")
+        let res = await axios.get('/logout');
         console.log(res, "res");
             navigate('/logout');
 
