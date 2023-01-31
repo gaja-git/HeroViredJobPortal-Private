@@ -42,7 +42,7 @@ export default function Rejected() {
                             <td>{ele.location}</td>
                             <td>{ele.applieddate}</td>
                             <td>{ele.posteddate}</td>
-                            <td className="job_status_gj">Shortlisted</td>
+                            <td className="job_status_gj">Rejected</td>
                         </tr>
                     </tbody>
                 )
