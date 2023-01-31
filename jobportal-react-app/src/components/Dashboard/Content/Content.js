@@ -5,6 +5,13 @@ import axios from "axios"
 
 export default function Content() {
         let [jobData, setJobData] = useState([])
+        let isapplied = true;
+        const [isDisabled, setDisabled] = useState(false);
+
+        function updateApplied() {
+
+                setDisabled(true);
+        }
 
         function applied() {
                 // let sidebar = document.querySelector(".app")
@@ -66,8 +73,14 @@ export default function Content() {
                                 <div className="dashBoard_job_title_gj">
                                         <h3>{ele.jobtitle}</h3>
                                         <div className="app">
-                                                <button onClick={applied}>Apply</button>
+                                                {isapplied ?
+                                                        <button className={isDisabled ? 'hidden' : 'button'} type="button" onClick={updateApplied}>
+                                                                <label>Apply</label>
+                                                                {/* Apply */}
+                                                        </button>
+                                                        : <label>Applied</label>}
                                         </div>
+                                        <span className={isDisabled ? 'appliedlabel' : 'hidden'}>Applied</span>
                                 </div>
 
                                 <div className="dashBoard_job_params_gj">

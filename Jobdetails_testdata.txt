@@ -1,0 +1,101 @@
+{
+"jobtitle": "Lead Business Analyst",
+"jobdescription": "Looking for a highly motivated and experienced Pre-Sales Lead/Architect with retail, corporate and digital banking domain experience. You will be responsible for building the blueprints, proposals, proof-of-concepts, solutions to support the product roadmap and various RFPs at the pre-sales stage.",
+"companyname": "Lentra AI",
+"location": "Pune",
+"jobtype": "Full Time",
+"posteddate": '2022-12-22',
+"salary": 2200000,
+"domain": "Cloud",
+"jobcode": "A101",   
+"skillsrequired": "AWS,Java",
+"applicationstatus": "Open"
+}
+
+{
+"jobtitle": "Technical lead",
+"jobdescription": "Looking for a highly motivated and experienced technical lead with problem solving mindset.Very strong in communication",
+"companyname": "Quest",
+"location": "Banglore",
+"jobtype": "Full Time",
+"posteddate": "2022-12-22",
+"salary": 2200000,
+"domain": "Testing",
+"jobcode": "B102",   
+"skillsrequired": "c++,c#",
+"applicationstatus": "Open"
+}
+
+{
+"jobtitle": "Senior Software",
+"jobdescription": "Were RingCentral, a global leader in cloud-based communications and collaboration software. We are fundamentally changing the nature of human interaction—giving people the freedom to connect powerfully and personally from anywhere, at any time, on any device.",
+"companyname": "WebDeep",
+"location": "Banglore",
+"jobtype": "Full Time",
+"posteddate": "2023-01-01",
+"salary": 4500000,
+"domain": "Internet",
+"jobcode": "C103",   
+"skillsrequired": "react,node",
+"applicationstatus": "Open"
+}
+
+{
+"jobtitle": "Senior Developer",
+"jobdescription": "3 -10 years of experience in software development
+Strong technical experience with object-oriented design (C++)
+Good knowledge of Data structure, Algorithms and distributed system design",
+"companyname": "Amaedus",
+"location": "Banglore",
+"jobtype": "Full Time",
+"posteddate": "2023-01-01",
+"salary": 4500000,
+"domain": "ITservices",
+"jobcode": "D104",   
+"skillsrequired": "c++,python",
+"applicationstatus": "Open"
+}
+
+{
+"jobtitle": "AWS Developer",
+"jobdescription": "3 -10 years of experience in software development
+Strong technical experience with object-oriented design 
+Good knowledge of Data structure, Algorithms and distributed system design",
+"companyname": "JP Morgan",
+"location": "Banglore",
+"jobtype": "Full Time",
+"posteddate": "2022-07-01",
+"salary": 4500000,
+"domain": "ITservices",
+"jobcode": "E105",   
+"skillsrequired": "AWS,oracle,Big Data",
+"applicationstatus": "Open"
+}
+
+{
+"jobtitle": "Opening for react & node",
+"jobdescription": "3 -10 years of experience in software development Strong technical experience with object-oriented design Good knowledge of Data structure, Algorithms and distributed system design",
+"companyname": "Xoriant",
+"location": "Chennai",
+"jobtype": "Full Time",
+"posteddate": "2022-07-01",
+"salary": 4500000,
+"domain": "ITservices",
+"jobcode": "F106",   
+"skillsrequired": "React,node",
+"applicationstatus": "Open"
+}
+
+{
+"jobtitle": "React developer",
+"jobdescription": "3 -10 years of experience in software development Strong technical experience with object-oriented design Good knowledge of Data structure, Algorithms and distributed system design",
+"companyname": "Valley",
+"location": "Chennai",
+"jobtype": "Part Time",
+"posteddate": "2022-07-01",
+"salary": 1500000,
+"domain": "ITservices",
+"jobcode": "G107",   
+"skillsrequired": "React,html,javascript",
+"applicationstatus": "Open"
+}

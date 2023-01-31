@@ -1,0 +1,102 @@
+User test data - for login:
+
+{
+    "email": "siva@gmail.com",
+    "password": "siva123"
+}
+
+Profile data for same user:
+{
+    "id": 4,
+    "firstname": "Siva",
+    "lastname": "Sakthi",
+    "email": "siva@gmail.com",
+    "contact": "1111111111",
+    "address": "50 feet road, bangalore, karnataka",
+    "about": "Women returnee looking out for opportunities",
+    "profilepic": "will update later",
+    "currentcompany": "not applicable",
+    "ctc": 12345,
+    "experience": 3,
+    "currentrole": "student",
+    "skills": "python,HTML,CSS,Js,React, Ruby on Rails",
+    "resumelink": "will update later",
+    "expectedsalary": 112233,
+    "preferredlocation": "Bangalore",
+    "created_at": "2023-01-28T17:48:47.632Z",
+    "updated_at": "2023-01-28T17:48:47.632Z"
+}
+
+Test Candidate application for same user above
+    {
+        "id": 3,
+        "jobid": 10,
+        "userid": 13,
+        "jobcode": "I109",
+        "applieddate": "2022-09-01",
+        "candidateapplicationstatus": "shortlisted",
+        "location": "Chennai",
+        "posteddate": "2022-07-01",
+        "created_at": "2023-01-29T12:20:00.791Z",
+        "updated_at": "2023-01-29T12:20:00.791Z"
+    },
+    {
+        "id": 4,
+        "jobid": 10,
+        "userid": 13,
+        "jobcode": "I109",
+        "applieddate": "2022-09-01",
+        "candidateapplicationstatus": "shortlisted",
+        "location": "Chennai",
+        "posteddate": "2022-07-01",
+        "created_at": "2023-01-29T12:20:59.122Z",
+        "updated_at": "2023-01-29T12:20:59.122Z"
+    },
+    {
+        "id": 5,
+        "jobid": 1,
+        "userid": 13,
+        "jobcode": "A101",
+        "applieddate": "2022-09-01",
+        "candidateapplicationstatus": "Rejected",
+        "location": "Pune",
+        "posteddate": "2022-07-01",
+        "created_at": "2023-01-29T12:27:56.116Z",
+        "updated_at": "2023-01-29T12:27:56.116Z"
+    },
+    {
+        "id": 6,
+        "jobid": 2,
+        "userid": 13,
+        "jobcode": "B102",
+        "applieddate": "2022-09-01",
+        "candidateapplicationstatus": "Interviewing",
+        "location": "Banglore",
+        "posteddate": "2022-07-01",
+        "created_at": "2023-01-29T12:33:50.063Z",
+        "updated_at": "2023-01-29T12:33:50.063Z"
+    },
+    {
+        "id": 7,
+        "jobid": 2,
+        "userid": 13,
+        "jobcode": "F106",
+        "applieddate": "2022-09-01",
+        "candidateapplicationstatus": "OfferRecieved",
+        "location": "Chennai",
+        "posteddate": "2022-07-01",
+        "created_at": "2023-01-29T12:38:05.004Z",
+        "updated_at": "2023-01-29T12:38:05.004Z"
+    },
+    {
+        "id": 8,
+        "jobid": 2,
+        "userid": 13,
+        "jobcode": "F1061",
+        "applieddate": "2022-09-01",
+        "candidateapplicationstatus": "OfferRecieved",
+        "location": "Chennai",
+        "posteddate": "2022-07-01",
+        "created_at": "2023-01-29T18:18:29.886Z",
+        "updated_at": "2023-01-29T18:18:29.886Z"
+    }

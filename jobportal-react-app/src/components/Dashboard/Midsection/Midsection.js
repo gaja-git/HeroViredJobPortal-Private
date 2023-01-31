@@ -34,7 +34,7 @@ export default function Midsection() {
 
 
             let res = await axios.get("/myapplications")
-            console.log("res", res.data)
+            console.log("res-myapplications", res.data)
             setMidMyApplicationJobData(res.data)
 
             let sfilterData = midMyApplicationjobData.filter(
@@ -42,7 +42,9 @@ export default function Midsection() {
                     ele.candidateapplicationstatus === "shortlisted"
             );
             console.log("sfilterData", sfilterData)
+
             setMidShortlistedJobData(sfilterData)
+            console.log("ShortlistedJobData", midShortlistedjobData)
 
             let ifilterData = midMyApplicationjobData.filter(
                 (ele) =>
