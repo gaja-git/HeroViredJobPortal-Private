@@ -1,6 +1,14 @@
 # HeroViredJobPortalProject
 Capstone Project for building a job portal -> implemented by Gaja and Vidhya.
 
+* PLEASE USE BELOW CREDENTIALS : 
+	* Username : siva@gmail.com
+	* Password : siva123
+	
+  * All the functionalities are executed in extensive length for this user detail. 
+ 
+  * The other tested details are uploaded in user_testdata.txt and jobdetails_testdata.txt.
+
 # Flow of the Project:
 * Start by running npm install in react app to start the server. Default port is 3000.
 * Start Rails server by running command rails s -p 3001.
