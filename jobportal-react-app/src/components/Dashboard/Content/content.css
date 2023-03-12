@@ -62,6 +62,7 @@ color: #006FCB;
    /* margin-right: -100px; */
    margin-right: -10%;
    margin-top:15px;
+   color: #4E7936;
   
    
 }
@@ -114,4 +115,24 @@ color: #006FCB;
     margin-left: 20px;
     margin-top: 20px;
     font-size: smaller;
+}
+
+.hidden {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+
+.appliedlabel {
+    /* display: flex; */
+    align-items: center;
+    display: inline;
+    color: #4E7936;
+    
+    margin-right: -10%;
+    margin-top: -1%;
+    width: 10%;
+    /* background-color: pink; */
+    text-align: center;
 }

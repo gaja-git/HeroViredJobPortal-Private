@@ -44,7 +44,7 @@ export default function Interviewing() {
                             <td>{ele.location}</td>
                             <td>{ele.applieddate}</td>
                             <td>{ele.posteddate}</td>
-                            <td className="job_status_gj">Shortlisted</td>
+                            <td className="job_status_gj">Interviewing</td>
                         </tr>
                     </tbody>
                     // { setshortlisted(true) }
